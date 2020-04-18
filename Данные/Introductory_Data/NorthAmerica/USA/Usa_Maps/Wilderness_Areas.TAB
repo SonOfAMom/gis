@@ -1,0 +1,44 @@
+!table
+!version 700
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 7
+    Name Char (80) ;
+    State Char (14) ;
+    State_fips Char (14) ;
+    Feature_Type Char (30) ;
+    Area_Sq_Miles Decimal (16, 3) ;
+    Perimeter_Miles Decimal (16, 3) ;
+    Url Char (150) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Shapefile" = ""
+"\Shapefile\PersistentCache" = "FALSE"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 1, 74"
+"\DefaultStyles" = ""
+"\DefaultStyles\Pen" = ""
+"\DefaultStyles\Pen\LineWidth" = "1"
+"\DefaultStyles\Pen\LineStyle" = "0"
+"\DefaultStyles\Pen\Color" = "0"
+"\DefaultStyles\Pen\Pattern" = "2"
+"\DefaultStyles\Brush" = ""
+"\DefaultStyles\Brush\Pattern" = "2"
+"\DefaultStyles\Brush\Forecolor" = "16777215"
+"\DefaultStyles\Brush\Backcolor" = "16777215"
+"\ActiveObject" = ""
+"\ActiveObject\Expr" = "Url"
+"\ActiveObject\Mode" = "HOTLINK_MODE_BOTH"
+"\ActiveObject\Relative" = "FALSE"
+"\data1" = ""
+"\data1\vol5" = ""
+"\data1\vol5\MIPro_Goose_v80" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa\Usa_Maps" = "Time_Period_Information:Range_of_Dates/Times:      Beginning_Date: 1972      Ending_Date: 2004"
+end_metadata

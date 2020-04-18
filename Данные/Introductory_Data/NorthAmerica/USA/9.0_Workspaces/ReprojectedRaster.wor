@@ -1,0 +1,67 @@
+!Workspace
+!Version 850
+!Charset WindowsLatin1
+Open Table "..\Usa_Maps\USA" As USA Interactive
+Open Table "..\USRaster\ROCKIES.TAB" As ROCKIES Interactive
+Open Table "..\Usa_Maps\USAReprojected" As USAReprojected Interactive
+Map From ROCKIES,USA 
+  Position (0.0625,0.40625) Units "in"
+  Width 5.29167 Units "in" Height 2.84375 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-98.68919201,38.33214496)
+  Zoom 2899.339685 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (6.5, 2600) Units "mi" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Labels Objects Relative Path On
+Map From ROCKIES,USA 
+  Position (5.375,0.40625) Units "in"
+  Width 5.29167 Units "in" Height 2.84375 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  image reprojection always resampling cubicconvolution 
+  CoordSys Earth Projection 12, 104, "m", 0
+  Center (-8524381.059,4026905.458)
+  Zoom 2925.00227 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "m"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (6.5, 2600) Units "mi" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Labels Objects Relative Path On

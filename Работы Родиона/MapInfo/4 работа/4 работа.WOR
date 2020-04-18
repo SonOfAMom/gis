@@ -1,0 +1,54 @@
+!Workspace
+!Version 1251
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Данные\церкви.TAB" As церкви Interactive
+Open Table "4 работа" As _4_работа Interactive
+Map From _4_работа,церкви
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Snap Mode On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (37.64489969,55.75670796)
+  Zoom 1.040407572 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",256,9,0,16777215) Pen (1,2,0) 
+      With N
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+   Object 7 Line Line Arrow Anchor (37.643986,55.756699) 
+   Object 6 Line Line Arrow Anchor (37.640755,55.756708) 
+   Object 1 Line Line Arrow Anchor (37.643996,55.759419) 
+   Object 5 Line Line Arrow Anchor (37.640009,55.754667) 
+   Object 9 Line Line Arrow Anchor (37.646074,55.754604) 
+   Object 2 Line Line Arrow Anchor (37.63523,55.755455) 
+   Object 10 Line Line Arrow Anchor (37.649827,55.759072) 
+   Object 4 Line Line Arrow Anchor (37.639836,55.752872) 
+   Object 3 Line Line Arrow Anchor (37.635137,55.753582) 
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.034, 13) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From _4_работа
+  Position (7.11458,0) Units "in"
+  Width 6.98958 Units "in" Height 5.65625 Units "in" Docked
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

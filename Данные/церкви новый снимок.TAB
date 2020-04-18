@@ -1,0 +1,20 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  File "церкви новый снимок.png"
+  Type "RASTER"
+  (37.633657,55.75758) (94,252) Label "Точка 1",
+  (37.646205,55.75942) (677,100) Label "Точка 2",
+  (37.659187,55.757285) (1285,274) Label "Точка 3",
+  (37.654316,55.754357) (1058,516) Label "Точка 4",
+  (37.646784,55.752978) (710,632) Label "Точка 5",
+  (37.636935,55.754176) (251,535) Label "Точка 6"
+  CoordSys Earth Projection 1, 104
+  Units "degree"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "935fc879-2f2b-4aa3-ba8a-7cf88a713352"
+end_metadata

@@ -1,0 +1,25 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\RUS_OBL" As RUS_OBL Interactive
+Map From RUS_OBL
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (112.1478088,60.82819608)
+  Zoom 12007.2733 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Name_r
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

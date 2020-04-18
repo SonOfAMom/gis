@@ -1,0 +1,59 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "dc-w.mig"
+  Type "RASTER"
+  (-78,39) (0,0) Label "",
+  (-77,39) (1200,0) Label "",
+  (-77,38) (1200,1201) Label "",
+  (-78,38) (0,1201) Label ""
+  CoordSys Earth Projection 1, 62
+  Units "degree"
+  RasterStyle 6 1
+begin_metadata
+"\Relief Shading" = ""
+"\Relief Shading\Horizontal Angle" = "135"
+"\Relief Shading\Vertical Angle" = "45"
+"\Relief Shading\Vertical Scale Factor" = "50"
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "1992"
+"\Quality\Lineage\Source\Scale" = "1:250,000"
+"\Quality\Lineage\Source\Citation" = "MapInfo from USGS"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Name" = "Longitude / Latitude (NAD 27 for Continental US)"
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 1, 62"
+"\Spatial Reference\Geographic\Coordinate Units" = "degree"
+"\Identification" = ""
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "MapInfo grid file of Washington DC - West"
+"\Identification\Use Constraints" = "For Use with MapInfo Professional"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\minx" = "-78"
+"\Identification\Domain\Bounds\maxx" = "-77"
+"\Identification\Domain\Bounds\maxy" = "39"
+"\Identification\Domain\Bounds\miny" = "38"
+"\Identification\Citation" = "MapInfo Professional Bundled Data"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "1992"
+"\Spatial Organization" = ""
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Regions"
+"\Spatial Organization\Object\Type1\Count" = "0"
+"\Spatial Organization\Object\Type2" = "Points"
+"\Spatial Organization\Object\Type2\Count" = "0"
+"\Spatial Organization\Object\Type3" = "Polylines"
+"\Spatial Organization\Object\Type3\Count" = "0"
+"\Spatial Organization\Object\Type4" = "Lines"
+"\Spatial Organization\Object\Type4\Count" = "0"
+"\Spatial Organization\Object\All" = "Sum of all objects"
+"\Spatial Organization\Object\All\Count" = "0"
+end_metadata

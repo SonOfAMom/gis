@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 5
+    N Integer ;
+    Широта Char (15) ;
+    Долгота Char (15) ;
+    X Decimal (10, 6) ;
+    Y Decimal (10, 6) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "e1243a8b-823c-4bc6-ba6f-b03803374ff7"
+end_metadata

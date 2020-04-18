@@ -1,0 +1,109 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 15
+    ZIP Char (5) Index 1 ;
+    Enc_ZIP Char (5) ;
+    St Char (2) ;
+    St_FIPS Char (2) ;
+    Name Char (28) ;
+    Multiple_Name Logical ;
+    Cty1Fips Char (3) ;
+    Cty2Fips Char (3) ;
+    Cty3Fips Char (3) ;
+    Area_mi Char (9) ;
+    RPO_Flag Char (1) ;
+    ZipType Char (1) ;
+    Pt_loc Char (1) ;
+    Lat Decimal (9, 6) ;
+    Lon Decimal (11, 6) ;
+ReadOnly
+begin_metadata
+"\Identification" = ""
+"\Identification\Citation" = "5 Digit ZIP Codes"
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "Tele Atlas/GDT Dynamap 5 Digit ZIP codes modified to meet MapInfo Specifications"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "August 2005"
+"\Identification\Progress" = "Completed Work"
+"\Identification\UPdate Frequency" = "Quarterly"
+"\Identification\Released Date" = "November 11, 2005"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\West" = "-92.2974"
+"\Identification\Domain\Bounds\East" = "-81.0635"
+"\Identification\Domain\Bounds\North" = "35.3068"
+"\Identification\Domain\Bounds\South" = "29.9236"
+"\Identification\Keywords" = ""
+"\Identification\Keywords\Theme" = ""
+"\Identification\Keywords\Theme\Geography" = "State"
+"\Identification\Keywords\Theme\Geography\Abbreviation" = "ST"
+"\Identification\Keywords\Theme\Aggregation" = "5 Digit ZIP Code"
+"\Identification\Keywords\Theme\Content" = "Boundary 5 Digit ZIP Codes"
+"\Identification\Keywords\Place" = ""
+"\Identification\Keywords\Place\Layers" = ""
+"\Identification\Keywords\Place\Layers\Count" = "1"
+"\Identification\Keywords\Place\Layers\Layer1Name" = "Country"
+"\Identification\Keywords\Place\Layers\Layer1" = "United States"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Use Contraints" = "For use with MapInfo Products"
+"\Identification\Security" = ""
+"\Identification\Security\Classification System" = "MapInfo Corporate"
+"\Identification\Security\Classification" = "Licensed Use Only"
+"\Identification\Native Environment" = "MapInfo"
+"\Identification\Cross Reference" = "Post Office Names Table"
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Positional" = ""
+"\Quality\Positional\Horizontal" = "+-167 Feet"
+"\Quality\Positional\Vertical" = "Not Applicable"
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Citation" = "(c) 2005 TANA, Inc./GDT, Inc. Dynamap/ZIP Code Boundary and Inventory Files 13.3"
+"\Quality\Lineage\Source\Scale" = "1:100,000"
+"\Quality\Lineage\Source\Vintage" = "2005.4 (Oct 2005)"
+"\Spatial Reference" = ""
+"\Spatial Reference\Coordinate Units" = "degree"
+"\Spatial Reference\Projection" = ""
+"\Spatial Reference\Projection\Clause" = "CoordSys Earth Projection 1, 33"
+"\Spatial Reference\Projection\Name" = "Longitude / Latitude (NAD 83)"
+"\Spatial Reference\Geodetic" = "Longitude / Latitude (NAD 83)"
+"\Spatial Organization" = ""
+"\Spatial Organization\Method" = ""
+"\Spatial Organization\Method\Type" = "Polygons and Nodes"
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Plines"
+"\Spatial Organization\Object\Plines" = ""
+"\Spatial Organization\Object\Plines\Count" = "0"
+"\Spatial Organization\Object\Type2" = "Lines"
+"\Spatial Organization\Object\Line" = ""
+"\Spatial Organization\Object\Line\Count" = "0"
+"\Spatial Organization\Object\Type3" = "Regions"
+"\Spatial Organization\Object\Region" = ""
+"\Spatial Organization\Object\Region\Count" = "604"
+"\Spatial Organization\Object\Type4" = "Points"
+"\Spatial Organization\Object\Point" = ""
+"\Spatial Organization\Object\Point\Count" = "0"
+"\Spatial Organization\Object\TotalCount" = "604"
+"\Distribution" = ""
+"\Distribution\Distributor" = ""
+"\Distribution\Distributor\Contact" = "MapInfo Corporation"
+"\Distribution\Distributor\Address" = "1 Global View, Troy, New York 12180"
+"\Distribution\Distributor\Phone" = "518 285 6000"
+"\Distribution\Distributor\Fax" = "518 285 6060"
+"\Distribution\Distributor\Email" = "http://www.mapinfo.com"
+"\Metadata" = ""
+"\Metadata\Date" = "November 11, 2005"
+"\Metadata\Contact" = "MapInfo Technical Support"
+"\Metadata\Address" = "1 Global View, Troy, New York 12180"
+"\Metadata\Phone" = "518 285 7283"
+"\Metadata\Fax" = "518 285 6080"
+"\Metadata\Email" = "http://www.mapinfo.com"
+"\Metadata\Security" = ""
+"\Metadata\Security\System" = "MapInfo Corporation"
+"\Metadata\Security\Classification" = "Licensed Use Only"
+"\Metadata\Security\Handling" = "All references and copyrights must stay with this product and be referenced in its derivatives"
+end_metadata

@@ -1,0 +1,12 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  File "ms1913bw.jpg"
+  Type "RASTER"
+  (0,1) (0,0) Label "Точка 1",
+  (1,1) (1,0) Label "Точка 2",
+  (0,0) (0,1) Label "Точка 3"
+  CoordSys NonEarth Units "ft"
+  Units "ft"

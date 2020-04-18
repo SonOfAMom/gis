@@ -1,0 +1,41 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\церкви новый снимок.TAB" As церкви_новый_снимок Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\церкви новый народная.TAB" As церкви_новый_народная Interactive
+Map From церкви_новый_народная,церкви_новый_снимок
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (37.64775957,55.75665471)
+  Zoom 2.116646633 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.034, 13) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.034, 13) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9

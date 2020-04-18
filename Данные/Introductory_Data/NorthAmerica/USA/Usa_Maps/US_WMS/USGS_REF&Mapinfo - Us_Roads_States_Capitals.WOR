@@ -1,0 +1,147 @@
+!Workspace
+!Version 650
+!Charset WindowsLatin1
+Open Table "USGS_REF&Mapinfo - Us_Roads_States_Capitals.TAB" As USGS_REF___Us_Roads_States_Cap Interactive
+Open Table "..\USA_CAPS" As STATECAP Interactive
+Open Table "..\USA" As USA Interactive
+Open Table "..\US_CNTY" As US_CNTY Interactive
+Open Table "JPL_WMS_USA.TAB" As JPL_WMS_USA Interactive
+Map From STATECAP,USGS_REF___Us_Roads_States_Cap,US_CNTY,JPL_WMS_USA,USA 
+  Position (0.0520833,0) Units "in"
+  Width 7.94792 Units "in" Height 6.05208 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-116.4459966,43.76259071)
+  Zoom 54.85726775 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+shade 5 with Pop_1990 ranges apply all use color Brush (90,16711680) 
+  400000: 1100000 Brush (2,12632256,16777215) Pen (1,2,0) ,
+  1100000: 3100000 Brush (2,13664384,16777215) Pen (1,2,0) ,
+  3100000: 5700000 Brush (2,15745088,16777215) Pen (1,2,0) ,
+  5700000: 23700000 Brush (90,16711680) Pen (1,2,0) 
+  default Brush (2,16777215,16777215) Pen (1,2,0) 
+  # use 1 round 100000 inflect off Brush (2,16777215,16777215) at 2 by 0 color 1 # 
+shade 3 with RowID ranges apply all use color Brush (90,16711680) 
+  0: 820 Brush (2,12632256,16777215) Pen (2,2,0) ,
+  820: 1610 Brush (2,13664384,16777215) Pen (2,2,0) ,
+  1610: 2410 Brush (2,15745088,16777215) Pen (2,2,0) ,
+  2410: 3220 Brush (90,16711680) Pen (2,2,0) 
+  default Brush (2,16777215,16777215) Pen (1,2,0) 
+  # use 1 round 10 inflect off Brush (2,16777215,16777215) at 2 by 0 color 1 # 
+Set Map
+  Layer 1
+    Display Global
+    Global Pen (1,2,0)  Brush (2,38368,16777215)  Symbol ("PING-64.BMP",255,18,0)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Right Font ("Arial",257,8,128,13947080) Pen (1,2,0) 
+      With Capital
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+   Object 14 Line Arrow Anchor (-116.214082478096,43.647645297919) 
+  Layer 2
+    Display Global
+    Global Pen (1,2,0)  Brush (2,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (1200, 490000) Units "mi" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency on 
+  color 16777215 
+    grayscale off 
+  Layer 3
+    Display Value
+    Global Pen (2,2,8421504)  Brush (1,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 4
+    Display Global
+    Global Pen (2,2,0)  Brush (1,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",257,10,0,13947080) Pen (1,2,0) 
+      With County
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,16711680)  Brush (67,255,16777215)  Symbol (35,0,12)  Line (1,2,16711935)  Font ("Arial",0,9,0)
+    Selectable Off
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency on 
+  color 16777215 
+    grayscale off 
+  Layer 6
+    Display Value
+    Global Pen (1,2,0)  Brush (2,13693183,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+  Layer 7
+    Display Global
+    Global Pen (1,2,0)  Brush (2,13693183,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",1,8,0) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Objects Relative Path Off
+set legend 
+  layer 3 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+set legend 
+  layer 6 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Title "USA Highways and Capitals and Counties with JPL WMS layer underlay"
+Create Cartographic Legend
+  Position (8.07292,0.0208333) Units "in"
+  Width 2.57292 Units "in" Height 6.02083 Units "in" 
+  Window Title "Legend of USA Highways and Capitals and Counties"
+  Portrait
+  Default Frame Title "# Legend" Font ("Arial",0,10,0)
+  Default Frame Style "%" Font ("Arial",0,8,0)
+  Frame From Layer 1
+    Border Pen (0,1,0) 
+    Title "STATECAP Legend" Font ("Arial",0,10,0)
+    Using Column object 
+    Style Font ("Arial",0,8,0)
+      Text "Point" Symbol ("PING-64.BMP",255,18,0) 
+  Frame From Layer 4
+    Border Pen (0,1,0) 
+    Title "US_CNTY Legend" Font ("Arial",0,10,0)
+    Using Column object 
+    Style Font ("Arial",0,8,0)
+      Text "Region" Region Pen (2,2,0)  Brush (1,0,16777215) 
+  Frame From Layer 7
+    Border Pen (0,1,0) 
+    Title "USA Legend" Font ("Arial",0,10,0)
+    Using Column object 
+    Style Font ("Arial",0,8,0)
+      Text "Region" Region Pen (1,2,0)  Brush (2,13693183,16777215) 
+  Frame From Layer 3
+    Border Pen (0,1,0) 
+  Frame From Layer 6
+    Border Pen (0,1,0) 

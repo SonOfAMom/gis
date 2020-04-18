@@ -1,0 +1,25 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "us_elevmi.mig"
+  Type "RASTER"
+  (-179.5,90) (0,0) Label "Pt 1",
+  (-41.1,90) (1385,0) Label "Pt 2",
+  (-41.1,4.3) (1385,860) Label "Pt 3",
+  (-179.5,4.3) (0,860) Label "Pt 4"
+  CoordSys Earth Projection 1, 104
+  Units "degree"
+  RasterStyle 6 1
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "2007.1 (Jan 2007)"
+"\Relief Shading" = ""
+"\Relief Shading\Horizontal Angle" = "135"
+"\Relief Shading\Vertical Angle" = "45"
+"\Relief Shading\Vertical Scale Factor" = "50"
+end_metadata

@@ -1,0 +1,18 @@
+!table
+!version 300
+!charset CodePage437
+
+Definition Table
+  Type NATIVE Charset "CodePage437"
+  Fields 5
+    Name Char (86) ;
+    Tel Char (141) ;
+    Index Decimal (7, 0) ;
+    Addres Char (67) ;
+    Type Char (57) ;
+begin_metadata
+"\MapInfo" = ""
+"\MapInfo\TableID" = "e0a33913-0f01-4fa1-8734-f0c78b7f0601"
+"\MapInfo\ParentTableID" = "33d718b4-a827-491b-9026-70df4c5e3af3"
+"\IsReadOnly" = "FALSE"
+end_metadata

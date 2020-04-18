@@ -1,0 +1,66 @@
+!Workspace
+!Version 1150
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Europe\Europe" As Europe Interactive
+Open Table "9 work" As _9_work Interactive
+Map From _9_work,Europe
+  Position (0.0208333,0.0625) Units "in"
+  Width 5.8125 Units "in" Height 3.20833 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Snap Mode On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (14.53530913,51.51269935)
+  Zoom 1093.223505 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+  Distance Type Spherical
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Название
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",1,8,8388608) Pen (1,2,0) 
+      With Country
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (750, 5750) Units "mi"
+Set Map Layer 1 Editable
+Set Window FrontWindow() Title "Europe"
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Map From _9_work
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (0,0)
+  Zoom 543.6193854 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Название
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From _9_work
+  Position (0.260417,1.875) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+set browse sortfilter off order by 1
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

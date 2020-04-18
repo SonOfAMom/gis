@@ -1,0 +1,35 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 5
+    InterState_Num Char (6) ;
+    St_Fips Char (2) ;
+    Cnty_Fips Char (3) ;
+    Length_Miles Decimal (9, 2) ;
+    Length_Kilometers Decimal (9, 2) ;
+ReadOnly
+begin_metadata
+"\SNAPTHIN" = ""
+"\SNAPTHIN\EnableSnap" = "FALSE"
+"\SNAPTHIN\Node" = "0"
+"\SNAPTHIN\Vec" = "0"
+"\SNAPTHIN\TolUnit" = "0"
+"\SNAPTHIN\EnableThin" = "TRUE"
+"\SNAPTHIN\Bend" = "0.02"
+"\SNAPTHIN\Dist" = "0.02"
+"\SNAPTHIN\ThinUnit" = "0"
+"\SNAPTHIN\EnableArea" = "FALSE"
+"\SNAPTHIN\Area" = "0"
+"\SNAPTHIN\AreaUnit" = "14"
+"\IsReadOnly" = "FALSE"
+"\data1" = ""
+"\data1\vol5" = ""
+"\data1\vol5\MIPro_Goose_v80" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa\Usa_Maps" = "Vintage 2002"
+end_metadata

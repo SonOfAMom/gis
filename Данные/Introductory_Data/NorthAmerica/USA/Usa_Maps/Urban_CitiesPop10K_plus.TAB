@@ -1,0 +1,11 @@
+!table
+!version 450
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 4
+    Name Char (90) ;
+    City Char (60) ;
+    State Char (2) ;
+    TotPop Integer ;

@@ -1,0 +1,34 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "1rab" As _1rab Interactive
+Browse * From _1rab
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Map From _1rab
+  Position (0.233333,1.85833) Units "in"
+  Width 7.99167 Units "in" Height 3.40833 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys NonEarth Units "m"
+  Center (500,500)
+  Zoom 2.344743276 Units "m"
+  Preserve Zoom Display Zoom
+  Distance Units "m" Area Units "sq m" XY Units "m"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Название
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9

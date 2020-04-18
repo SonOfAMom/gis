@@ -1,0 +1,59 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "helens2.mig"
+  Type "RASTER"
+  (557813.81966484804,5121978.7618043199) (0,0) Label "",
+  (567602.49651025201,5121978.7618043199) (327,0) Label "",
+  (567602.49651025201,5107991.3555763196) (327,467) Label "",
+  (557813.81966484804,5107991.3555763196) (0,467) Label ""
+  CoordSys Earth Projection 8, 62, "m", -123, 0, 0.9996, 500000, 0
+  Units "m"
+  RasterStyle 6 1
+begin_metadata
+"\Relief Shading" = ""
+"\Relief Shading\Horizontal Angle" = "135"
+"\Relief Shading\Vertical Angle" = "45"
+"\Relief Shading\Vertical Scale Factor" = "50"
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "1980"
+"\Quality\Lineage\Source\Scale" = "na"
+"\Quality\Lineage\Source\Citation" = "Public Domain - OSU"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Name" = "UTM Zone 10 (NAD 27 for US)"
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 62, ""m"", -123, 0, 0.9996, 500000, 0 Bounds (-29934233763.6, -29946497364.3) (29935349391.2, 29956741321.8)"
+"\Spatial Reference\Geographic\Coordinate Units" = "m"
+"\Identification" = ""
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "MapInfo grid file of Mt. St. Helens after eruption"
+"\Identification\Use Constraints" = "For Use with MapInfo Professional"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\minx" = "122.25"
+"\Identification\Domain\Bounds\maxx" = "122.12"
+"\Identification\Domain\Bounds\maxy" = "46.25"
+"\Identification\Domain\Bounds\miny" = "46.12"
+"\Identification\Citation" = "MapInfo Professional Bundled Data"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "1980"
+"\Spatial Organization" = ""
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Regions"
+"\Spatial Organization\Object\Type1\Count" = "0"
+"\Spatial Organization\Object\Type2" = "Points"
+"\Spatial Organization\Object\Type2\Count" = "0"
+"\Spatial Organization\Object\Type3" = "Polylines"
+"\Spatial Organization\Object\Type3\Count" = "0"
+"\Spatial Organization\Object\Type4" = "Lines"
+"\Spatial Organization\Object\Type4\Count" = "0"
+"\Spatial Organization\Object\All" = "Sum of all objects"
+"\Spatial Organization\Object\All\Count" = "0"
+end_metadata

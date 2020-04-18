@@ -1,0 +1,8 @@
+!table
+!version 750
+!charset WindowsLatin1
+
+Definition Table
+  File "usgs_nlcd - us_nlcd.xml"
+  Type "WMS"
+  CoordSys Earth Projection 1, 104

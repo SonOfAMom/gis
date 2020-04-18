@@ -1,0 +1,81 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\ƒанные\церкви новый снимок.TAB" As церкви_новый_снимок Interactive
+Open Table "C:\Users\rodin\Desktop\ƒанные\церкви новый народна€.TAB" As церкви_новый_народна€ Interactive
+Open Table "C:\Users\rodin\Desktop\ƒанные\церкви.TAB" As церкви Interactive
+Open Table "C:\Users\rodin\Desktop\MapInfo\4 работа\4 работа" As _4_работа Interactive
+Open Table "6 work" As _6_work Interactive
+Map From _6_work,_4_работа,церкви_новый_народна€,церкви_новый_снимок
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Snap Mode On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (37.64620849,55.75653016)
+  Zoom 2.206044356 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Right Font ("Tahoma",256,9,0,16777215) Pen (1,2,0) 
+      With N
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+   Object 6 Anchor (37.640648,55.756742) 
+   Object 7 Anchor (37.643934,55.756691) 
+   Object 11 Anchor (37.638462,55.757885) 
+   Object 8 Anchor (37.640514,55.755339) 
+   Object 5 Anchor (37.639938,55.75477) 
+   Object 9 Anchor (37.64604,55.75461) 
+   Object 13 Anchor (37.644546,55.75424) 
+   Object 2 Anchor (37.635109,55.755415) 
+   Object 10 Anchor (37.649737,55.759053) 
+   Object 12 Anchor (37.654138,55.758311) 
+   Object 1 Anchor (37.644021,55.759362) 
+   Object 3 Anchor (37.635131,55.753538) 
+   Object 14 Anchor (37.641708,55.753093) 
+   Object 4 Anchor (37.639686,55.752942) 
+   Object 15 Line Line Arrow Anchor (37.632193,55.753236) 
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Ќазвание
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.034, 13) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 76 
+    transparency off 
+  color 0 
+    grayscale off 
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.034, 13) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From _6_work
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

@@ -1,0 +1,17 @@
+!table
+!version 450
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 10
+    Name Char (60) Index 1 ;
+    SmartLabel Char (25) ;
+    PrimaryName Logical ;
+    Class Char (1) ;
+    Toll Char (1) ;
+    miCode Integer ;
+    HwySuff Char (1) ;
+    FIPS_Cnty Char (5) ;
+    State_Abbr Char (2) ;
+    FeaturePriority SmallInt ;

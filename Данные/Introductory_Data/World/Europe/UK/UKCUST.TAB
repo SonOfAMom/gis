@@ -1,0 +1,59 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type DBF Charset "WindowsLatin1"
+  Fields 11
+    Company Char (47) ;
+    Title Char (9) ;
+    Surname Char (18) ;
+    Address1 Char (51) ;
+    Address2 Char (53) ;
+    Town Char (28) ;
+    County Char (22) ;
+    Postcode Char (10) ;
+    Phone Char (27) ;
+    Fax Char (19) ;
+    Sales Decimal (15, 2) ;
+ReadOnly
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "1992"
+"\Quality\Lineage\Source\Citation" = "MapInfo"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Name" = "British National Grid"
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 79, ""m"", -2, 49, 0.9996012717, 400000, -100000 Bounds (-7845061.1011, -15524202.1641) (8645061.1011, 4470074.53373)"
+"\Spatial Reference\Geographic\Coordinate Units" = "m"
+"\Identification" = ""
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "UK customers"
+"\Identification\Use Constraints" = "For Use with MapInfo Professional"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\minx" = "-0.48"
+"\Identification\Domain\Bounds\maxx" = "-0.14"
+"\Identification\Domain\Bounds\maxy" = "51.54"
+"\Identification\Domain\Bounds\miny" = "51.36"
+"\Identification\Citation" = "MapInfo Professional Bundled Data"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "1992"
+"\Spatial Organization" = ""
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Regions"
+"\Spatial Organization\Object\Type1\Count" = "0"
+"\Spatial Organization\Object\Type2" = "Points"
+"\Spatial Organization\Object\Type2\Count" = "11"
+"\Spatial Organization\Object\Type3" = "Polylines"
+"\Spatial Organization\Object\Type3\Count" = "0"
+"\Spatial Organization\Object\Type4" = "Lines"
+"\Spatial Organization\Object\Type4\Count" = "0"
+"\Spatial Organization\Object\All" = "Sum of all objects"
+"\Spatial Organization\Object\All\Count" = "11"
+end_metadata

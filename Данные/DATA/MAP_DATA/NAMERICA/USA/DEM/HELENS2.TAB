@@ -1,0 +1,14 @@
+!table
+!version 500
+!charset WindowsCyrillic
+
+Definition Table
+  File "helens2.dem"
+  Type "RASTER"
+  (557813.81966484804,5121978.7618043199) (0,0) Label "Точка 1",
+  (567602.49651025201,5121978.7618043199) (327,0) Label "Точка 2",
+  (567602.49651025201,5107991.3555763196) (327,467) Label "Точка 3",
+  (557813.81966484804,5107991.3555763196) (0,467) Label "Точка 4"
+  CoordSys Earth Projection 8, 62, "m", -123, 0, 0.9996, 500000, 0
+  Units "m"
+  RasterStyle 6 1

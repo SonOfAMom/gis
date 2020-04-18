@@ -1,0 +1,62 @@
+!Workspace
+!Version 900
+!Charset WindowsLatin1
+Open Table "..\USA_Maps\LabelExample" As LabelExample Interactive
+Open Table "..\USA_Maps\BackGround" As BackGround Interactive
+Map From LabelExample,BackGround 
+  Position (0,0) Units "in"
+  Width 5.25 Units "in" Height 5.72917 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 33
+  Center (-72.595483,41.76253)
+  Zoom 0.772 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map Layer 0 Selectable
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (2, 100000) Units "mi" Off 
+    Label Line None Position Above Font ("Arial",0,8,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto On Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Layer 2 Editable
+Set Window FrontWindow() Title "Original Labels"
+Map From LabelExample,BackGround 
+  Position (5.33333,0) Units "in"
+  Width 5.25 Units "in" Height 5.72917 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 33
+  Center (-72.595483,41.76253)
+  Zoom 0.772 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",256,8,0,16777215) Pen (1,2,0) 
+      With Name
+      Follow Path Auto On Overlap Off Duplicates On PartialSegments On Offset 2
+      Visibility On
+   Object 41 Visibility Off
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With ID
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Layer 2 Editable
+Set Window FrontWindow() Title "New Curved Label Option"

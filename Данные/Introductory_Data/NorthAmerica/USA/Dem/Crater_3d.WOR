@@ -1,0 +1,80 @@
+!Workspace
+!Version 850
+!Charset WindowsLatin1
+Open Table "HELENS2.TAB" As HELENS2 Interactive VMGrid
+Map From HELENS2 
+  Position (0.0520833,0.0520833) Units "in"
+  Width 9.91667 Units "in" Height 5.67708 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  image reprojection auto resampling cubicconvolution 
+  CoordSys Earth Projection 8, 62, "m", -123, 0, 0.9996, 500000, 0
+  Center (562708.1581,5114985.059)
+  Zoom 16.05195763 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "m"
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0.47, 190) Units "mi" Off 
+    inflect 6 at 
+      RGB(0, 240, 240) : 0 
+      RGB(0, 128, 0) : 1 
+      RGB(112, 192, 112) : 153 
+      RGB(77, 38, 0) : 305 
+      RGB(189, 95, 0) : 1525 
+      RGB(255, 177, 100) : 3050 
+      round 0 # use 3 # 
+    contrast 50 
+    brightness 50 
+    grayscale off 
+
+    relief on 
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Dim uniqueStringName As String
+uniqueStringName = uniqueStringName & "Map From HELENS2   Width 9.91667 Units ""in"" Height 5.67708 Units ""in""  Set W"
+uniqueStringName = uniqueStringName & "indow FrontWindow() ScrollBars Off Autoscroll Off Set Map  image reprojection au"
+uniqueStringName = uniqueStringName & "to resampling cubicconvolution   CoordSys Earth Projection 8, 62, ""m"", -123, 0"
+uniqueStringName = uniqueStringName & ", 0.9996, 500000, 0  Center (562708.1581,5114985.059)  Zoom 16.05195763 Units """
+uniqueStringName = uniqueStringName & "mi""  Preserve Zoom Display Zoom  Distance Units ""mi"" Area Units ""sq mi"" XY "
+uniqueStringName = uniqueStringName & "Units ""m"" Set Map  Layer 1    Display Value    Global Pen (1,2,0)  Brush (2,16"
+uniqueStringName = uniqueStringName & "777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font (""Arial"",0,9,0)    Zoom"
+uniqueStringName = uniqueStringName & " (0.47, 190) Units ""mi"" Off     inflect 6 at       RGB(0, 240, 240) : 0       "
+uniqueStringName = uniqueStringName & "RGB(0, 128, 0) : 1       RGB(112, 192, 112) : 153       RGB(77, 38, 0) : 305    "
+uniqueStringName = uniqueStringName & "   RGB(189, 95, 0) : 1525       RGB(255, 177, 100) : 3050       round 0 # use 3 "
+uniqueStringName = uniqueStringName & "#     contrast 50     brightness 50     grayscale off     relief on  set legend "
+uniqueStringName = uniqueStringName & "  layer 1     display on     shades on     symbols off     lines off     count o"
+uniqueStringName = uniqueStringName & "ff     title auto Font (""Arial"",0,9,0)    subtitle auto Font (""Arial"",0,8,0)"
+uniqueStringName = uniqueStringName & "    ascending off     ranges Font (""Arial"",0,8,0)      auto display on ,      "
+uniqueStringName = uniqueStringName & "auto display on ,      auto display on ,      auto display on ,      auto displa"
+uniqueStringName = uniqueStringName & "y on ,      auto display on   "
+Create Map3D MapString uniqueStringName 
+	Camera Position(576547.436623,5102408.047333,11275.145334) FocalPoint(563662.045582,5114662.274522,781.209028) 
+		Orientation(-0.707107,0.707107,0.000000,0.624063,-0.593495,0.508241,5314.668843,39888.450789)
+	Light Position(0.000000,0.000000,1.000000) Color RGB(255,255,255) 
+	Resolution(75,75) 
+	Scale 1 
+	Background RGB(0,128,64)
+Set Window FrontWindow() Position(0.270833,0.364583) Units "in" Width 5.291667  Units "in" Height 2.864583 Units "in" 
+UnDim uniqueStringName
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

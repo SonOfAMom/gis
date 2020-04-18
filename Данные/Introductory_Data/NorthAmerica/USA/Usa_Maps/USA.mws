@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<WorkSpace name="" version="MXP_WorkSpace_1_0" date="2005-07-14T10:42:48" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.mapinfo.com/mxp" xmlns:mxp="http://www.mapinfo.com/mxp">
+	<ConnectionSet/>
+	<DataSourceDefinitionSet>
+		<TABFileDataSourceDefinition id="id4" readOnly="false">
+			<DataSourceName>Urban_CitiesPop10K_plus</DataSourceName>
+			<FileName>Urban_CitiesPop10K_plus.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id6" readOnly="false">
+			<DataSourceName>USA_CAPS</DataSourceName>
+			<FileName>USA_CAPS.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id9" readOnly="false">
+			<DataSourceName>Us_Int_Shields1</DataSourceName>
+			<FileName>Us_Int_Shields1.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id11" readOnly="false">
+			<DataSourceName>Us_Int_Shields2</DataSourceName>
+			<FileName>Us_Int_Shields2.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id13" readOnly="false">
+			<DataSourceName>Us_Int_Shields3</DataSourceName>
+			<FileName>Us_Int_Shields3.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id15" readOnly="false">
+			<DataSourceName>Interstates</DataSourceName>
+			<FileName>Interstates.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id20" readOnly="false">
+			<DataSourceName>Secondary_Rds</DataSourceName>
+			<FileName>Secondary_Rds.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id23" readOnly="false">
+			<DataSourceName>Streams_Rivers</DataSourceName>
+			<FileName>Streams_Rivers.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id25" readOnly="false">
+			<DataSourceName>Lakes</DataSourceName>
+			<FileName>Lakes.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id27" readOnly="false">
+			<DataSourceName>Urban_Areas</DataSourceName>
+			<FileName>Urban_Areas.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id30" readOnly="false">
+			<DataSourceName>Wilderness_Areas</DataSourceName>
+			<FileName>Wilderness_Areas.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id33" readOnly="false">
+			<DataSourceName>USA</DataSourceName>
+			<FileName>USA.TAB</FileName>
+		</TABFileDataSourceDefinition>
+		<TABFileDataSourceDefinition id="id37" readOnly="false">
+			<DataSourceName>USA_OutLine</DataSourceName>
+			<FileName>USA_OutLine.TAB</FileName>
+		</TABFileDataSourceDefinition>
+	</DataSourceDefinitionSet>
+	<MapDefinitionSet defaultMapDefinition="Map194584584">
+		<MapDefinition id="id1" name="Urban_CitiesPop10K_plus,...,USA_OutLine Map" alias="Map194584584">
+			<DisplayConditions>
+				<MapSize uom="mapinfo:imagesize pixel">
+					<ImageWidth>1032</ImageWidth>
+					<ImageHeight>614</ImageHeight>
+				</MapSize>
+				<ZoomAndCenter>
+					<MapZoom uom="mapinfo:length mi">3310</MapZoom>
+					<gml:Point srsName="mapinfo:coordsys 1,104">
+						<gml:coordinates>-95.601887,37.166919</gml:coordinates>
+					</gml:Point>
+				</ZoomAndCenter>
+				<DisplayCoordSys>
+					<SRSName>mapinfo:coordsys 1,104</SRSName>
+				</DisplayCoordSys>
+				<ResizeMethod>preserveZoom</ResizeMethod>
+			</DisplayConditions>
+			<LayerList>
+				<LabelLayer id="id2" name="Overlapped Labels" alias="Overlapped Labels id2" volatile="unknown">
+					<Visibility visible="true"/>
+					<LabelSourceList>
+						<LabelSource maxLabels="2147483647" name="Us_Int_Shields3">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 190.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id13"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="true" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(255,255,255)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(0,0,0)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>HwyNumber</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>0</XOffset>
+											<YOffset>0</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Us_Int_Shields2">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 1820.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id11"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="true" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(255,255,255)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(0,0,0)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>HwyNumber</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>0</XOffset>
+											<YOffset>0</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Us_Int_Shields1">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">1800.000000 2810.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id9"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="true" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(255,255,255)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(0,0,0)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>HwyNumber</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>0</XOffset>
+											<YOffset>0</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+					</LabelSourceList>
+				</LabelLayer>
+				<LabelLayer id="id3" name="Label Layer" alias="Label Layer id3" volatile="unknown">
+					<Visibility visible="true"/>
+					<LabelSourceList>
+						<LabelSource maxLabels="2147483647" name="USA">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">800.000000 3400.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id33"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="10" size-unit="mapinfo:length pt" stroke="rgb(80,80,80)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,244,208)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>State_Name</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList>
+								<LabelSelectionTheme name="Label Theme" alias="Label Theme" id="id34">
+									<Visibility visible="true"/>
+									<LabelSelectionConditionList>
+										<LabelSelectionCondition>
+											<StringFilter>
+												<StringValueExpression>
+													<AttributeName>MI_Key</AttributeName>
+												</StringValueExpression>
+												<Operator>mapinfo:op eq</Operator>
+												<StringValue>13</StringValue>
+											</StringFilter>
+											<LabelProperties>
+												<LabelVisibility visible="true"/>
+												<LabelCallout visible="false" end="none">
+													<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+														<Pen>mapinfo:pen 2</Pen>
+													</LineStyle>
+												</LabelCallout>
+												<LabelReferencePosition>
+													<gml:Point srsName="mapinfo:coordsys 1,62">
+														<gml:coordinates>-115.080357,45.261426</gml:coordinates>
+													</gml:Point>
+												</LabelReferencePosition>
+												<LabelPriority>
+													<MajorPriority>
+														<NumericValueExpression>
+															<MapinfoNumericExpression>2147483647</MapinfoNumericExpression>
+														</NumericValueExpression>
+													</MajorPriority>
+													<MinorPriority>
+														<NumericValueExpression>
+															<MapinfoNumericExpression>2147483647</MapinfoNumericExpression>
+														</NumericValueExpression>
+													</MinorPriority>
+												</LabelPriority>
+											</LabelProperties>
+										</LabelSelectionCondition>
+									</LabelSelectionConditionList>
+								</LabelSelectionTheme>
+							</LabelThemeList>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Wilderness_Areas">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 30.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id30"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(64,64,64)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(0,160,0)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>Name</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Lakes">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">10.000000 110.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id25"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(48,117,255)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>Name</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Streams_Rivers">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">30.000000 40.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id23"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="interLayer" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>Name</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="arrow">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>bottom</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Secondary_Rds">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 80.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id20"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="interLayer" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(64,64,64)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,244,208)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>Route_Name</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>center</HorizontalAlignment>
+											<VerticalAlignment>bottom</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="USA_CAPS">
+							<Visibility visible="true">
+								<VisibleRange enabled="false">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 100000.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id6"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="8" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,244,208)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>Capital</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>left</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>3</XOffset>
+											<YOffset>3</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+						<LabelSource maxLabels="2147483647" name="Urban_CitiesPop10K_plus">
+							<Visibility visible="true">
+								<VisibleRange enabled="true">
+									<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 200.000000</ZoomRange>
+								</VisibleRange>
+							</Visibility>
+							<DataSourceRef ref="id4"/>
+							<BaseLabelProperties>
+								<LabelProperties>
+									<LabelVisibility visible="true" allowOverlap="false" allowDuplicates="all" allowOutOfView="false"/>
+									<LabelText justification="right">
+										<BaseLabelStyle>
+											<FontStyle size="7" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,244,208)" effect-opacity="1" effect-type="halo" font-weight="bold" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+										</BaseLabelStyle>
+										<StringTokenList>
+											<StringToken>
+												<StringValueExpression>
+													<AttributeName>City</AttributeName>
+												</StringValueExpression>
+											</StringToken>
+										</StringTokenList>
+										<LabelCharacterLimit spacing="1">2147483647</LabelCharacterLimit>
+									</LabelText>
+									<LabelCallout visible="false" end="none">
+										<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+											<Pen>mapinfo:pen 2</Pen>
+										</LineStyle>
+									</LabelCallout>
+									<LabelReferencePosition recalculate="outOfView">
+										<LineLabelPositionInterval>0</LineLabelPositionInterval>
+									</LabelReferencePosition>
+									<LabelLayout>
+										<Alignment>
+											<HorizontalAlignment>left</HorizontalAlignment>
+											<VerticalAlignment>center</VerticalAlignment>
+										</Alignment>
+										<Offset uom="mapinfo:imagesize pixel">
+											<XOffset>2</XOffset>
+											<YOffset>2</YOffset>
+										</Offset>
+										<LabelRelativeOrientation>parallel</LabelRelativeOrientation>
+									</LabelLayout>
+									<LabelBaseSize useScale="false">
+										<MapScale>0.000000</MapScale>
+									</LabelBaseSize>
+								</LabelProperties>
+							</BaseLabelProperties>
+							<LabelThemeList/>
+						</LabelSource>
+					</LabelSourceList>
+				</LabelLayer>
+				<FeatureLayer id="id5" name="Urban_CitiesPop10K_plus" alias="Urban_CitiesPop10K_plus id5" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 500.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id4"/>
+				</FeatureLayer>
+				<FeatureLayer id="id7" name="USA_CAPS" alias="USA_CAPS id7" volatile="unknown">
+					<DataSourceRef ref="id6"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id8" name="Style Override" alias="Style Override id8">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,255,255)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="&lt;" size="9" size-unit="mapinfo:length pt" stroke="rgb(128,0,0)" stroke-opacity="1" family="MapInfo Symbols" font-weight="normal" shadow="false" effect-type="none"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id10" name="Us_Int_Shields1" alias="Us_Int_Shields1 id10" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">1800.000000 2800.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id9"/>
+				</FeatureLayer>
+				<FeatureLayer id="id12" name="Us_Int_Shields2" alias="Us_Int_Shields2 id12" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 1800.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id11"/>
+				</FeatureLayer>
+				<FeatureLayer id="id14" name="Us_Int_Shields3" alias="Us_Int_Shields3 id14" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 190.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id13"/>
+				</FeatureLayer>
+				<FeatureLayer id="id16" name="Interstates" alias="Interstates id16" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">800.000000 2800.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id15"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id17" name="Style Override" alias="Style Override id17">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(255,168,80)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,255,255)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id18" name="Interstates" alias="Interstates id18" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 800.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id15"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id19" name="Style Override" alias="Style Override id19">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(255,168,80)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 192</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,255,255)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id21" name="Secondary_Rds" alias="Secondary_Rds id21" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 800.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id20"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id22" name="Style Override" alias="Style Override id22">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(80,80,80)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,255,255)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id24" name="Streams_Rivers" alias="Streams_Rivers id24" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">20.000000 400.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id23"/>
+				</FeatureLayer>
+				<FeatureLayer id="id26" name="Lakes" alias="Lakes id26" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">10.000000 500.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id25"/>
+				</FeatureLayer>
+				<FeatureLayer id="id28" name="Urban_Areas" alias="Urban_Areas id28" volatile="unknown">
+					<DataSourceRef ref="id27"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id29" name="Style Override" alias="Style Override id29">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 1</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(224,112,0)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id31" name="Wilderness_Areas" alias="Wilderness_Areas id31" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 2000.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id30"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id32" name="Style Override" alias="Style Override id32">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 1</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(0,160,0)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id35" name="USA" alias="USA id35" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">0.000000 3300.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id33"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id36" name="Style Override" alias="Style Override id36">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,244,208)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+				<FeatureLayer id="id38" name="USA_OutLine" alias="USA_OutLine id38" volatile="unknown">
+					<Visibility visible="true">
+						<VisibleRange enabled="true">
+							<ZoomRange uom="mapinfo:length mi" minInclusive="true" maxInclusive="false">3310.000000 100000.000000</ZoomRange>
+						</VisibleRange>
+					</Visibility>
+					<DataSourceRef ref="id37"/>
+					<FeatureStyleModifierThemeList>
+						<FeatureStyleOverrideTheme id="id39" name="Style Override" alias="Style Override id39">
+							<CompositeStyle>
+								<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+									<Pen>mapinfo:pen 2</Pen>
+								</LineStyle>
+								<AreaStyle>
+									<LineStyle stroke="rgb(0,0,0)" stroke-opacity="1" width="1" width-unit="mapinfo:imagesize pixel">
+										<Pen>mapinfo:pen 2</Pen>
+									</LineStyle>
+									<Interior fill-opacity="1" fill="rgb(255,244,208)"/>
+								</AreaStyle>
+								<PointStyle>
+									<FontSymbol text="#" size="12" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="MapInfo 3.0 Compatible"/>
+								</PointStyle>
+								<MapinfoTextObjectStyle>
+									<FontStyle size="9" size-unit="mapinfo:length pt" stroke="rgb(0,0,0)" stroke-opacity="1" family="Arial" font-style="normal" effect="rgb(255,255,255)" effect-opacity="1" effect-type="none" font-weight="normal" text-decoration="none" text-case="default" shadow="false" expand="false"/>
+								</MapinfoTextObjectStyle>
+							</CompositeStyle>
+						</FeatureStyleOverrideTheme>
+					</FeatureStyleModifierThemeList>
+				</FeatureLayer>
+			</LayerList>
+			<MapLegendSet>
+				<MapLegend id="id40" name="MapLegend" alias="MapLegendid40" autoLayout="1">
+					<LegendList/>
+					<LegendLayout>
+						<LegendFrameSpacing uom="mapinfo:imagesize pixel">
+							<VerticalSpacing>0</VerticalSpacing>
+							<HorizontalSpacing>0</HorizontalSpacing>
+						</LegendFrameSpacing>
+					</LegendLayout>
+				</MapLegend>
+			</MapLegendSet>
+		</MapDefinition>
+	</MapDefinitionSet>
+</WorkSpace>

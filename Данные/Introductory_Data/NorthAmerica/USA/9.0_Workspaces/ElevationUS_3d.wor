@@ -1,0 +1,96 @@
+!Workspace
+!Version 750
+!Charset WindowsLatin1
+Open Table "..\Usa_Maps\US_elevmi.TAB" As US_elevmi Interactive
+Open Table "..\Usa_Maps\USA" As USA Interactive
+Map From USA,US_elevmi 
+  Position (-0.229167,-0.0729167) Units "in"
+  Width 10.5313 Units "in" Height 5.67708 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-104.2710323,44.77524834)
+  Zoom 3893.172068 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Global
+    Global Pen (2,6,128)  Brush (1,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",1,9,8388608) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Labels Objects Relative Path On
+  Layer 2
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (120, 47000) Units "mi" Off 
+    inflect 6 at 
+      RGB(64, 0, 128) : -10000 
+      RGB(0, 128, 192) : -5000 
+      RGB(151, 255, 239) : -30 
+      RGB(152, 188, 124) : 0 
+      RGB(181, 189, 124) : 3.75 
+      RGB(211, 190, 124) : 30 
+      round 0 # use 3 # 
+    contrast 50 
+    brightness 50 
+    grayscale off 
+
+    relief on 
+set legend 
+  layer 2 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Dim uniqueStringName As String
+uniqueStringName = uniqueStringName & "Map From USA,US_elevmi   Width 10.5313 Units ""in"" Height 5.67708 Units ""in"" "
+uniqueStringName = uniqueStringName & " Set Window FrontWindow() ScrollBars Off Autoscroll Off Set Map  CoordSys Earth "
+uniqueStringName = uniqueStringName & "Projection 1, 104  Center (-106.0538777,45.47095217)  Zoom 3845.983494 Units ""m"
+uniqueStringName = uniqueStringName & "i""  Preserve Zoom Display Zoom  Distance Units ""mi"" Area Units ""sq mi"" XY U"
+uniqueStringName = uniqueStringName & "nits ""degree"" Set Map  Layer 1    Display Global    Global Pen (2,6,128)  Brus"
+uniqueStringName = uniqueStringName & "h (1,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font (""Arial"",0,9,0) "
+uniqueStringName = uniqueStringName & "   Label Line None Position Center Font (""Arial"",1,9,8388608) Pen (1,2,0)     "
+uniqueStringName = uniqueStringName & "  With State_Name      Parallel On Auto On Overlap Off Duplicates On Offset 2   "
+uniqueStringName = uniqueStringName & "   Visibility On    Activate Using URL On Labels Objects Relative Path On  Layer"
+uniqueStringName = uniqueStringName & " 2    Display Value    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol ("
+uniqueStringName = uniqueStringName & "35,0,12)  Line (1,2,0)  Font (""Arial"",0,9,0)    Zoom (120, 47000) Units ""mi"""
+uniqueStringName = uniqueStringName & " Off     inflect 6 at       RGB(64, 0, 128) : -10000       RGB(0, 128, 192) : -5"
+uniqueStringName = uniqueStringName & "000       RGB(151, 255, 239) : -30       RGB(152, 188, 124) : 0       RGB(181, 1"
+uniqueStringName = uniqueStringName & "89, 124) : 3.75       RGB(211, 190, 124) : 30       round 0 # use 3 #     contra"
+uniqueStringName = uniqueStringName & "st 50     brightness 50     grayscale off     relief on  set legend   layer 2   "
+uniqueStringName = uniqueStringName & "  display on     shades on     symbols off     lines off     count off     title"
+uniqueStringName = uniqueStringName & " auto Font (""Arial"",0,9,0)    subtitle auto Font (""Arial"",0,8,0)    ascendin"
+uniqueStringName = uniqueStringName & "g off     ranges Font (""Arial"",0,8,0)      auto display on ,      auto display"
+uniqueStringName = uniqueStringName & " on ,      auto display on ,      auto display on ,      auto display on ,      "
+uniqueStringName = uniqueStringName & "auto display on   Set Window FrontWindow() Printer Name ""\\troyprint\1nw-hpdj40"
+uniqueStringName = uniqueStringName & "00-1"" Orientation Landscape Copies 1 Papersize 123 "
+Create Map3D MapString uniqueStringName 
+	Camera Position(-105.821002,-1.701857,106.303591) FocalPoint(-105.102803,44.220335,-9.630360) 
+		Orientation(-0.198922,0.911561,0.359843,-0.005759,-0.368262,0.929704,69.633169,184.139063)
+	Light Position(0.000000,0.000000,1.000000) Color RGB(255,255,255) 
+	Resolution(75,75) 
+	Scale 1 
+	Background RGB(255,255,255)
+Set Window FrontWindow() Position(5.031250,0.447917) Units "in" Width 5.291667  Units "in" Height 2.864583 Units "in" 
+UnDim uniqueStringName
+Set Window FrontWindow() Printer
+ TrueColor on Border off Method device Dither halftone
+ Transparency Raster device Vector device Scale Patterns on
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

@@ -1,0 +1,133 @@
+!Workspace
+!Version 1150
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Данные\Introductory_Data\World\Russia\City" As City Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\Introductory_Data\World\Russia\SubjectRF" As SubjectRF Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\Introductory_Data\World\Russia\Railway" As Railway Interactive
+Add Column "SubjectRF" (Кол_воCity Integer) From City Set To Count(*) Where within Dynamic
+Map From City,Railway,SubjectRF
+  Position (0.520833,0.635417) Units "in"
+  Width 9.41667 Units "in" Height 5.32292 Units "in" 
+Set Window FrontWindow() ScrollBars On Autoscroll On
+Set Map
+  CoordSys Earth Projection 6, 1001, "km", 100, 54, 49, 68.5, 0, 0
+  Center (-730.1691803,1267.216312)
+  Zoom 7510.251633 Units "km"
+  Preserve Scale Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "km"
+  Distance Type Cartesian
+shade 3 with Кол_воCity ranges apply all use color Brush (2,255,16777215) 
+  0: 5 Brush (2,13697023,16777215) Pen (1,2,0) ,
+  5: 9 Brush (2,10535167,16777215) Pen (1,2,0) ,
+  9: 13 Brush (2,7373055,16777215) Pen (1,2,0) ,
+  13: 20 Brush (2,3162367,16777215) Pen (1,2,0) ,
+  20: 77 Brush (2,255,16777215) Pen (1,2,0) 
+  default Brush (2,16777215,16777215) Pen (1,2,0) 
+  # use 1 round 0.1 inflect off Brush (2,16776960,16777215) at 3 by 0 color 1 # 
+shade 4 with население density 100 square width 3 color 16711680   # color 0 # 
+shade 5 with сельское/Area(Object, "sq km") graduated 0.0:0 0.078:36 Symbol (58,128,36,"MapInfo Miscellaneous",0,0) vary size by "SQRT"   # color 0 # 
+Set Map
+  Layer 1
+    Display Global
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (31,0,12) Line (1,2,0) Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 8000) Units "km"
+  Layer 2
+    Display Off
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Above Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 3
+    Display Off
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Selectable Off
+  Layer 4
+    Display Off
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Selectable Off
+  Layer 5
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Selectable Off
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Arial Cyr",0,9,0)
+    Label Line None Position Center Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With OBL_NAME
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 10000) Units "km"
+set legend 
+  layer 3 
+    display on 
+    shades off 
+    symbols on 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle "Плотность сельского населения в регионах" Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display off ,
+      auto display off ,
+      auto display off ,
+      "7,8 человек на кв.м" display on ,
+      "39 чел на кв.м" display on ,
+      "78 чел на кв.м" display on  
+set legend 
+  layer 4 
+    display on 
+    shades off 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle "Население субъектов РФ" Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      "1 точка = 100 тысяч человек" display on  
+set legend 
+  layer 5 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle "Количество городов в регионе" Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Create Designer Legend
+  Position (11.1979,0.21875) Units "in"
+  Width 2.80208 Units "in" Height 5 Units "in" 
+  Portrait
+  Default Frame Style "#" Font ("Tahoma",0,8,0)
+  Default Frame Line Width 36 Units "pt"
+  Default Frame Region Width 32 Units "pt"
+  Default Frame Region Height 14 Units "pt"
+  Frame From Layer 5
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From City
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+  Row 10 Column 0
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+set browse row 10 column 0
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

@@ -1,0 +1,67 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\mos_name" As mos_name Hide Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\MOS_Str0" As MOS_Str0 Hide Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\M_STREET.TAB" As M_STREET Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\moscow-kadastr.TAB" As moscow_kadastr Interactive
+Map From M_STREET,moscow_kadastr
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (37.64384755,55.7555427)
+  Zoom 62.3748368 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_Name
+      Parallel On Auto On Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.2, 79) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set CoordSys Earth Projection 1, 104
+Set Map Layer 0 Editable
+Create Point (37.486017,55.87075)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.534464,55.538591)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.757429,55.614661)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.696437,55.876649)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.68592,55.87536)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.666851,55.759878)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.614933,55.748385)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.549184,55.752153)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.592761,55.730751)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.595721,55.730977)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.658849,55.732703)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Create Point (37.486017,55.87075)
+    Symbol (68,9969285,18,"MapInfo Symbols",272,0) 
+Set Map Layer 0 Editable Off
+Set CoordSys Earth
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9

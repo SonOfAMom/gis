@@ -1,0 +1,10 @@
+!table
+!version 450
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 3
+    Len Integer ;
+    Name Char (22) Index 1 ;
+    Num_Railway Integer ;

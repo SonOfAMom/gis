@@ -1,0 +1,20 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 8
+    Направление Char (10) ;
+    Дир_угол Char (10) ;
+    Обр_дир_угол Char (10) ;
+    Румб Char (10) ;
+    Обр_румб Char (10) ;
+    Ист_азимут Char (10) ;
+    Магн_азимут Char (10) ;
+    S Float ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "e1ee1dc6-27b2-47d5-830a-5fa3362454a1"
+end_metadata

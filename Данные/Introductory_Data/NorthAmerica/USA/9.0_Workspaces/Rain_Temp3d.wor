@@ -1,0 +1,139 @@
+!Workspace
+!Version 850
+!Charset WindowsLatin1
+Open Table "..\Grid\RAIN_YR.TAB" As RAIN_YR Interactive VMGrid
+Open Table "..\Grid\TEMP_YR.TAB" As TEMP_YR Interactive VMGrid
+Map From RAIN_YR 
+  Position (0.0104167,0) Units "in"
+  Width 4.86458 Units "in" Height 2.10417 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 62
+  Center (-96.46491906,36.5752315)
+  Zoom 3399 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (110, 45000) Units "mi" Off 
+    inflect 5 at 
+      RGB(155, 255, 255) : 5 
+      RGB(0, 221, 221) : 30 
+      RGB(111, 111, 255) : 55 
+      RGB(49, 49, 255) : 80 
+      RGB(0, 0, 160) : 105 
+      round 0 # use 3 # 
+    contrast 50 
+    brightness 50 
+    grayscale off 
+
+    relief off 
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Dim uniqueStringName As String
+uniqueStringName = uniqueStringName & "Map From RAIN_YR   Width 5.29167 Units ""in"" Height 2.86458 Units ""in""  Set W"
+uniqueStringName = uniqueStringName & "indow FrontWindow() ScrollBars Off Autoscroll Off Set Map  CoordSys Earth Projec"
+uniqueStringName = uniqueStringName & "tion 1, 62  Center (-96.275931,36.5752315)  Zoom 3264.766008 Units ""mi""  Prese"
+uniqueStringName = uniqueStringName & "rve Zoom Display Zoom  Distance Units ""mi"" Area Units ""sq mi"" XY Units ""deg"
+uniqueStringName = uniqueStringName & "ree"" Set Map  Layer 1    Display Value    Global Pen (1,2,0)  Brush (2,16777215"
+uniqueStringName = uniqueStringName & ",16777215)  Symbol (35,0,12)  Line (1,2,0)  Font (""Arial"",0,9,0)    Zoom (110,"
+uniqueStringName = uniqueStringName & " 45000) Units ""mi"" Off     inflect 5 at       RGB(155, 255, 255) : 5       RGB"
+uniqueStringName = uniqueStringName & "(0, 221, 221) : 30       RGB(111, 111, 255) : 55       RGB(49, 49, 255) : 80    "
+uniqueStringName = uniqueStringName & "   RGB(0, 0, 160) : 105       round 0 # use 3 #     contrast 50     brightness 5"
+uniqueStringName = uniqueStringName & "0     grayscale off     relief off  set legend   layer 1     display on     shad"
+uniqueStringName = uniqueStringName & "es on     symbols off     lines off     count off     title auto Font (""Arial"""
+uniqueStringName = uniqueStringName & ",0,9,0)    subtitle auto Font (""Arial"",0,8,0)    ascending off     ranges Font"
+uniqueStringName = uniqueStringName & " (""Arial"",0,8,0)      auto display on ,      auto display on ,      auto displ"
+uniqueStringName = uniqueStringName & "ay on ,      auto display on ,      auto display on   "
+Create Map3D MapString uniqueStringName 
+	Camera Position(-88.592367,-4.284690,64.156502) FocalPoint(-95.926518,38.892208,1.797419) 
+		Orientation(-0.471524,0.679986,0.561501,0.096247,-0.566614,0.818343,49.331398,105.599830)
+	Light Position(0.000000,0.000000,1.000000) Color RGB(255,255,255) 
+	Resolution(75,75) 
+	Scale 1 
+	Background RGB(64,0,64)
+Set Window FrontWindow() Position(-0.031250,2.427083) Units "in" Width 4.937500  Units "in" Height 3.197917 Units "in" 
+UnDim uniqueStringName
+Map From TEMP_YR 
+  Position (4.97917,-0.0520833) Units "in"
+  Width 5.39583 Units "in" Height 2.16667 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll Off
+Set Map
+  CoordSys Earth Projection 1, 62
+  Center (-96.275931,36.5752315)
+  Zoom 3600 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (110, 42000) Units "mi" Off 
+    inflect 5 at 
+      RGB(0, 0, 232) : 35 
+      RGB(138, 138, 255) : 45 
+      RGB(255, 155, 155) : 55 
+      RGB(255, 51, 51) : 65 
+      RGB(191, 0, 0) : 75 
+      round 0 # use 3 # 
+    contrast 50 
+    brightness 50 
+    grayscale off 
+
+    relief off 
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Arial",0,9,0)
+    subtitle auto Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Dim uniqueStringName As String
+uniqueStringName = uniqueStringName & "Map From TEMP_YR   Width 5.29167 Units ""in"" Height 2.86458 Units ""in""  Set W"
+uniqueStringName = uniqueStringName & "indow FrontWindow() ScrollBars Off Autoscroll Off Set Map  CoordSys Earth Projec"
+uniqueStringName = uniqueStringName & "tion 1, 62  Center (-96.275931,36.5752315)  Zoom 3254.334322 Units ""mi""  Prese"
+uniqueStringName = uniqueStringName & "rve Zoom Display Zoom  Distance Units ""mi"" Area Units ""sq mi"" XY Units ""deg"
+uniqueStringName = uniqueStringName & "ree""  Distance Type Spherical Set Map  Layer 1    Display Value    Global Pen ("
+uniqueStringName = uniqueStringName & "1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font (""Ari"
+uniqueStringName = uniqueStringName & "al"",0,9,0)    Zoom (110, 42000) Units ""mi"" Off     inflect 5 at       RGB(0, "
+uniqueStringName = uniqueStringName & "0, 232) : 35       RGB(138, 138, 255) : 45       RGB(255, 155, 155) : 55       R"
+uniqueStringName = uniqueStringName & "GB(255, 51, 51) : 65       RGB(191, 0, 0) : 75       round 0 # use 3 #     contr"
+uniqueStringName = uniqueStringName & "ast 50     brightness 50     grayscale off     relief off  set legend   layer 1 "
+uniqueStringName = uniqueStringName & "    display on     shades on     symbols off     lines off     count off     tit"
+uniqueStringName = uniqueStringName & "le auto Font (""Arial"",0,9,0)    subtitle auto Font (""Arial"",0,8,0)    ascend"
+uniqueStringName = uniqueStringName & "ing off     ranges Font (""Arial"",0,8,0)      auto display on ,      auto displ"
+uniqueStringName = uniqueStringName & "ay on ,      auto display on ,      auto display on ,      auto display on   "
+Create Map3D MapString uniqueStringName 
+	Camera Position(-114.100715,15.428573,80.339015) FocalPoint(-99.609227,39.558669,2.723275) 
+		Orientation(-0.391881,0.891165,0.228594,-0.175523,-0.292267,0.940091,53.125932,107.002761)
+	Light Position(0.000000,0.000000,1.000000) Color RGB(255,255,255) 
+	Resolution(75,75) 
+	Scale 1 
+	Background RGB(64,0,64)
+Set Window FrontWindow() Position(4.958333,2.437500) Units "in" Width 5.635417  Units "in" Height 3.166667 Units "in" 
+UnDim uniqueStringName

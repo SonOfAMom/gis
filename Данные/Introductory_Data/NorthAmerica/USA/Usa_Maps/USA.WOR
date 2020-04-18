@@ -1,0 +1,147 @@
+!Workspace
+!Version 600
+!Charset WindowsLatin1
+Open Table "Us_Int_Shields1" As Us_Int_Shields1 Interactive
+Open Table "USA" As USA Interactive
+Open Table "USA_CAPS" As USA_CAPS Interactive
+Open Table "Us_Int_Shields2" As Us_Int_Shields2 Interactive
+Open Table "Streams_Rivers" As Streams_Rivers Interactive
+Open Table "Urban_CitiesPop10K_plus" As Urban_CitiesPop10K_plus Interactive
+Open Table "Secondary_Rds" As Secondary_Rds Interactive
+Open Table "Urban_Areas" As Urban_Areas Interactive
+Open Table "Interstates" As Interstates Interactive
+Open Table "Us_Int_Shields3" As Us_Int_Shields3 Interactive
+Open Table "Wilderness_Areas" As Wilderness_Areas Interactive
+Open Table "USA_OutLine" As USA_OutLine Interactive
+Open Table "Lakes" As Lakes Interactive
+Map From Urban_CitiesPop10K_plus,USA_CAPS,Us_Int_Shields1,Us_Int_Shields2,Us_Int_Shields3,Interstates,
+  Interstates,Secondary_Rds,Streams_Rivers,Lakes,Urban_Areas,Wilderness_Areas,USA,USA_OutLine 
+  Position (1.83333,1.59375) Units "in"
+  Width 5.29167 Units "in" Height 2.84375 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-95.60188657,37.16691893)
+  Zoom 3310 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 500) Units "mi" 
+    Label Line None Position Right Font ("Arial",257,7,0,16774352) Pen (1,2,0) 
+      With City
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 200) Units "mi"
+  Layer 2
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (60,8388608,9,"MapInfo Symbols",0,0)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 2800) Units "mi" Off 
+    Label Line None Position Right Font ("Arial",257,8,0,16774352) Pen (1,2,0) 
+      With Capital
+      Parallel On Auto On Overlap Off Duplicates On Offset 3
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (1800, 2800) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,8,16777215,0) Pen (1,2,0) 
+      With HwyNumber
+      Parallel On Auto On Overlap On Duplicates On Offset 0
+      Visibility Zoom (1800, 2810) Units "mi"
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 1800) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,8,16777215,0) Pen (1,2,0) 
+      With HwyNumber
+      Parallel On Auto On Overlap On Duplicates On Offset 0
+      Visibility Zoom (0, 1820) Units "mi"
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 190) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,8,16777215,0) Pen (1,2,0) 
+      With HwyNumber
+      Parallel On Auto On Overlap On Duplicates On Offset 0
+      Visibility Zoom (0, 190) Units "mi"
+  Layer 6
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,16754768)  Font ("Arial",0,9,0)
+    Zoom (800, 2800) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With InterState_Num
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 7
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,192,16754768)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With InterState_Num
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 8
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,5263440)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line None Position Above Font ("Arial",257,8,4210752,16774352) Pen (1,2,0) 
+      With Route_Name
+      Parallel On Auto On Overlap Off Duplicates Off Offset 2
+      Visibility Zoom (0, 80) Units "mi"
+  Layer 9
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (20, 400) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto On Overlap Off Duplicates Off Offset 2
+      Visibility Zoom (30, 40) Units "mi"
+  Layer 10
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (10, 500) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,8,3175935,16777215) Pen (1,2,0) 
+      With Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (10, 110) Units "mi"
+  Layer 11
+    Display Global
+    Global Pen (1,1,0)  Brush (2,14708736,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 12
+    Display Global
+    Global Pen (1,1,0)  Brush (2,40960,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 2000) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,8,4210752,40960) Pen (1,2,0) 
+      With Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 30) Units "mi"
+  Layer 13
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16774352,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 3300) Units "mi" 
+    Label Line None Position Center Font ("Arial",257,10,5263440,16774352) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (800, 3400) Units "mi"
+   Object 13 Anchor (-115.081313403924,45.261304490685) 
+  Layer 14
+    Display Global
+    Global Pen (1,2,0)  Brush (2,16774352,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (3310, 100000) Units "mi" 
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Printer
+ Name "Microsoft Office Document Image Writer" Orientation Portrait Copies 1
+ Papersize 1
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

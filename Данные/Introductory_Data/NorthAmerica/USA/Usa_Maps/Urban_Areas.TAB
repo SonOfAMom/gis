@@ -1,0 +1,21 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 3
+    Name Char (90) ;
+    Urban_Pop Float ;
+    Total_Area_Miles Float ;
+ReadOnly
+begin_metadata
+"\data1" = ""
+"\data1\vol5" = ""
+"\data1\vol5\MIPro_Goose_v80" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa\Usa_Maps" = "Census 2000"
+"\IsReadOnly" = "FALSE"
+end_metadata

@@ -1,0 +1,56 @@
+!table
+!version 450
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 8
+    Country Char (50) ;
+    Cntry_abbrf Char (10) ;
+    Capital Char (20) ;
+    Continent Char (30) ;
+    Numeric_code Integer ;
+    FIPS Char (2) ;
+    ISO_2 Char (2) ;
+    ISO_3 Char (3) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "1998"
+"\Quality\Lineage\Source\Scale" = "1:1,000,000"
+"\Quality\Lineage\Source\Citation" = "MapInfo Corporation from National Imagery and Mapping Agency (NIMA)"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Name" = "Longitude / Latitude (WGS 84)"
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 1, 104"
+"\Spatial Reference\Geographic\Coordinate Units" = "degree"
+"\Identification" = ""
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "Eurpoe MapInfo Workspace.  Opens maps in .\Map_data\Europe"
+"\Identification\Use Constraints" = "For Use with MapInfo Professional"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\minx" = "-56.26"
+"\Identification\Domain\Bounds\maxx" = "69.07"
+"\Identification\Domain\Bounds\maxy" = "81.86"
+"\Identification\Domain\Bounds\miny" = "27.64"
+"\Identification\Citation" = "MapInfo Professional Bundled Data"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "1998"
+"\Spatial Organization" = ""
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Regions"
+"\Spatial Organization\Object\Type1\Count" = "4000"
+"\Spatial Organization\Object\Type2" = "Points"
+"\Spatial Organization\Object\Type2\Count" = "0"
+"\Spatial Organization\Object\Type3" = "Polylines"
+"\Spatial Organization\Object\Type3\Count" = "0"
+"\Spatial Organization\Object\Type4" = "Lines"
+"\Spatial Organization\Object\Type4\Count" = "0"
+"\Spatial Organization\Object\All" = "Sum of all objects"
+"\Spatial Organization\Object\All\Count" = "4000"
+end_metadata

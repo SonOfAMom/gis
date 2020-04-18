@@ -1,0 +1,55 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 3
+    Name Char (60) Index 1 ;
+    State Char (2) Index 2 ;
+    TotPop Integer ;
+begin_metadata
+"\Identification_Information" = ""
+"\Identification_Information\Keywords" = ""
+"\Identification_Information\Keywords\Theme" = ""
+"\Identification_Information\Keywords\Theme\Theme_Keyword1" = "Cities/Places"
+"\Identification_Information\Keywords\Place" = ""
+"\Identification_Information\Keywords\Place\Place_Keyword2" = "US"
+"\Identification_Information\Spatial_Domain" = ""
+"\Identification_Information\Spatial_Domain\Bounding_Coordinates" = ""
+"\Identification_Information\Spatial_Domain\Bounding_Coordinates\West_Bounding_Coordinate" = "-176.661"
+"\Identification_Information\Spatial_Domain\Bounding_Coordinates\East_Bounding_Coordinate" = "179.289"
+"\Identification_Information\Spatial_Domain\Bounding_Coordinates\North_Bounding_Coordinate" = "57.2423"
+"\Identification_Information\Spatial_Domain\Bounding_Coordinates\South_Bounding_Coordinate" = "51.4068"
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Citation3" = "US Census"
+"\Quality\Lineage\Source\Citation2" = "USGS GNIS"
+"\Quality\Lineage\Source\Scale2" = "1:24,000"
+"\Quality\Lineage\Source\Vintage3" = "2000"
+"\Quality\Lineage\Source\Vintage2" = "2003"
+"\Quality\Lineage\Source\Citation1" = "(c) 2004 MapInfo Corporation"
+"\Quality\Lineage\Source\Vintage1" = "2003"
+"\Spatial_Data_Organization_Information" = ""
+"\Spatial_Data_Organization_Information\Point_and_Vector_Object_Information" = ""
+"\Spatial_Data_Organization_Information\Point_and_Vector_Object_Information\VPF_Terms_Description" = ""
+"\Spatial_Data_Organization_Information\Point_and_Vector_Object_Information\VPF_Terms_Description\VPF_Point_and_Vector_Object_Information1" = ""
+"\Spatial_Data_Organization_Information\Point_and_Vector_Object_Information\VPF_Terms_Description\VPF_Point_and_Vector_Object_Information1\VPF_Point_and_Vector_Object_Type" = "Node"
+"\Spatial_Data_Organization_Information\Point_and_Vector_Object_Information\VPF_Terms_Description\VPF_Point_and_Vector_Object_Information1\Point_and_Vector_Object_Count" = "0"
+"\Identification" = ""
+"\Identification\Citation" = "CityINFO"
+"\Identification\Period" = ""
+"\Identification\Period\Currency" = "Oct 2003"
+"\Identification\Access" = "Refer to MapInfo License Agreement"
+"\Identification\Native" = "MapInfo Format"
+"\Identification\CrossReference1" = "CityINFO"
+"\Spatial Reference" = ""
+"\Spatial Reference\Projection" = ""
+"\Spatial Reference\Projection\Name" = "Longitude / Latitude (NAD 83)"
+"\Spatial Reference\Projection\Clause" = "CoordSys Earth Projection 1, 33"
+"\Spatial Reference\Geodetic" = ""
+"\Spatial Reference\Geodetic\Datum" = "NAD 83"
+"\Spatial Reference\Geodetic\Ellipsoid" = "GRS 80"
+end_metadata

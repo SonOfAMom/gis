@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset CodePage437
+
+Definition Table
+  Type DBF Charset "CodePage437"
+  Fields 5
+    Name Char (86) ;
+    Tel Char (141) ;
+    Index Decimal (7, 0) ;
+    Addres Char (67) ;
+    Type Char (57) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "588d24d8-5aa7-419c-a175-6fb5b22d17c6"
+end_metadata

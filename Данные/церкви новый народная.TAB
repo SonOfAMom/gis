@@ -1,0 +1,19 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  File "церкви новый народная.png"
+  Type "RASTER"
+  (37.633657,55.75758) (87,248) Label "Точка 1",
+  (37.646205,55.75942) (671,96) Label "Точка 2",
+  (37.654316,55.754357) (1049,512) Label "Точка 4",
+  (37.646784,55.752978) (700,628) Label "Точка 5",
+  (37.636935,55.754176) (242,528) Label "Точка 6"
+  CoordSys Earth Projection 1, 104
+  Units "degree"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "ee07b6ca-9853-453d-a0a8-fd0cf6a22e69"
+end_metadata

@@ -1,0 +1,48 @@
+!Workspace
+!Version 650
+!Charset WindowsLatin1
+Open Table "USGS_NLCD - Us_NLCD.TAB" As USGS_NLCD___Us_NLCD Interactive
+Open Table "..\USA" As STATES Interactive
+Open Table "..\USA_CAPS" As USA_CAPS Interactive
+Map From USA_CAPS,STATES,USGS_NLCD___Us_NLCD 
+  Position (0.0520833,0.0520833) Units "in"
+  Width 5.29167 Units "in" Height 3.25 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-94.58867608,39.10382066)
+  Zoom 3760.108608 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Right Font ("Arial",1,9,0) Pen (1,2,0) 
+      With Capital
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 800) Units "mi"
+  Layer 2
+    Display Global
+    Global Pen (1,2,0)  Brush (1,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",1,9,0) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Objects Relative Path Off
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,38368,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Selectable Off
+    Zoom (1400, 550000) Units "mi" Off 
+  contrast 51 
+  brightness 51 
+  alpha 255 
+    transparency on 
+  color 16777215 
+    grayscale off 
+Set Window FrontWindow() Title "USA Natural Features"
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

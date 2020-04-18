@@ -1,0 +1,20 @@
+!table
+!version 900
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 13
+    CrimeId Float Index 1 ;
+    OffenderId Float ;
+    Crime_Month Integer ;
+    Crime_Date Date ;
+    Crime_Time Time Index 2 ;
+    Date_Time DateTime Index 3 ;
+    MajorText Char (40) ;
+    MinorText Char (40) ;
+    Borough Char (40) ;
+    WardName Char (40) ;
+    Borough_Ward_List_2005_Month Integer ;
+    X Float ;
+    Y Float ;

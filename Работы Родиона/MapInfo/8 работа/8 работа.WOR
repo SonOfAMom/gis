@@ -1,0 +1,82 @@
+!Workspace
+!Version  600
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\undegr" As UNDEGR Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\way" As WAY Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\mos_park" As MOS_PARK Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\distr" As DISTR Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\water" As WATER Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\mos_name" As mos_name Hide Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\MOS_Str0" As MOS_Str0 Hide Interactive
+Open Table "C:\Users\rodin\Desktop\Данные\DATA\MAP_DATA\RUSSIA\MOSCOW\M_STREET.TAB" As M_STREET Interactive
+Open Table "BOLNICY" As BOLNICY Interactive
+Map From BOLNICY,UNDEGR,M_STREET,WAY,WATER,MOS_PARK,DISTR
+  Position (0.1875,-0.125) Units "in"
+  Width 4.125 Units "in" Height 5.32292 Units "in" 
+Set Window FrontWindow() ScrollBars On Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (37.68780095,55.72434524)
+  Zoom 58.29476671 Units "km"
+  Preserve Scale Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Global
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,16777215) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_Name
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 7
+    Display Global
+    Global Pen (1,1,0) Brush (2,8421504,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From BOLNICY
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

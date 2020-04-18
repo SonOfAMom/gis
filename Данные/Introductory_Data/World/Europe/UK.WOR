@@ -1,0 +1,81 @@
+!Workspace
+!Version 400
+!Charset WindowsLatin1
+Open Table "uk\UK_A_RDS" As A_Roads Interactive
+Open Table "uk\UKmtrway" As Motorways Interactive
+Open Table "Europe" As Europe Interactive
+Open Table "uk\IRCTY_12" As Irish_Cities Interactive
+Open Table "uk\UKCTY203" As UK_Cities Interactive
+Open Table "EURWATER" As Water Interactive
+Open Table "..\OCEAN.tab" As Ocean Interactive
+Map From UK_Cities,Irish_Cities,Water,Motorways,A_Roads,Europe,Ocean 
+  Position (0.0625,0.0625) Units "in"
+  Width 5.28125 Units "in" Height 2.9375 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 79
+  Center (-3.844958456,54.58981241)
+  Zoom 1198.518345 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line Arrow Position Right Font ("Arial",0,7,0) Pen (1,2,0) 
+      With Place_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 5
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line Arrow Position Right Font ("Arial",0,7,0) Pen (1,2,0) 
+      With Place_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 5
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With CAT
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 500) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Status
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 100) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Type
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (1000, 100000) Units "mi" Off 
+    Label Line None Position Center Font ("Arial",513,10,8388608) Pen (1,2,0) 
+      With Country
+      Parallel On Auto On Overlap On Duplicates On Offset 2
+      Visibility Zoom (600, 100000) Units "mi"
+   Object 53 Anchor (-1.798288854438,53.774387835185) 
+  Layer 7
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Title "United Kingdom"
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

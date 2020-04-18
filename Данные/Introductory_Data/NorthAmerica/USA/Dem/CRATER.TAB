@@ -1,0 +1,59 @@
+!table
+!version 500
+!charset WindowsLatin1
+
+Definition Table
+  File "crater.mig"
+  Type "RASTER"
+  (561133.13500000001,4760971.2989999996) (0,0) Label "",
+  (571466.44999999995,4760971.2989999996) (344,0) Label "",
+  (571466.44999999995,4746991.6909999996) (344,467) Label "",
+  (561133.13500000001,4746991.6909999996) (0,467) Label ""
+  CoordSys Earth Projection 8, 62, "m", -123, 0, 0.9996, 500000, 0
+  Units "m"
+  RasterStyle 6 1
+begin_metadata
+"\Relief Shading" = ""
+"\Relief Shading\Horizontal Angle" = "135"
+"\Relief Shading\Vertical Angle" = "45"
+"\Relief Shading\Vertical Scale Factor" = "50"
+"\IsReadOnly" = "FALSE"
+"\Quality" = ""
+"\Quality\Lineage" = ""
+"\Quality\Lineage\Source" = ""
+"\Quality\Lineage\Source\Vintage" = "na"
+"\Quality\Lineage\Source\Scale" = "na"
+"\Quality\Lineage\Source\Citation" = "Public Domain"
+"\Spatial Reference" = ""
+"\Spatial Reference\Geographic" = ""
+"\Spatial Reference\Geographic\Projection" = ""
+"\Spatial Reference\Geographic\Projection\Name" = "UTM Zone 10 (NAD 27 for US)"
+"\Spatial Reference\Geographic\Projection\Clause" = "CoordSys Earth Projection 8, 62, ""m"", -123, 0, 0.9996, 500000, 0 Bounds (-30038145267.1, -29930159759) (30039267533.3, 29939681701.6)"
+"\Spatial Reference\Geographic\Coordinate Units" = "m"
+"\Identification" = ""
+"\Identification\Description" = ""
+"\Identification\Description\Abstract" = "MapInfo grid file of Crater Lake, Oregon"
+"\Identification\Use Constraints" = "For Use with MapInfo Professional"
+"\Identification\Access Constraints" = "Licensed Users"
+"\Identification\Domain" = ""
+"\Identification\Domain\Bounds" = ""
+"\Identification\Domain\Bounds\minx" = "-122.25"
+"\Identification\Domain\Bounds\maxx" = "-122.12"
+"\Identification\Domain\Bounds\maxy" = "43"
+"\Identification\Domain\Bounds\miny" = "42.87"
+"\Identification\Citation" = "MapInfo Professional Bundled Data"
+"\Identification\Time Period" = ""
+"\Identification\Time Period\Currentness" = "na"
+"\Spatial Organization" = ""
+"\Spatial Organization\Object" = ""
+"\Spatial Organization\Object\Type1" = "Regions"
+"\Spatial Organization\Object\Type1\Count" = "0"
+"\Spatial Organization\Object\Type2" = "Points"
+"\Spatial Organization\Object\Type2\Count" = "0"
+"\Spatial Organization\Object\Type3" = "Polylines"
+"\Spatial Organization\Object\Type3\Count" = "0"
+"\Spatial Organization\Object\Type4" = "Lines"
+"\Spatial Organization\Object\Type4\Count" = "0"
+"\Spatial Organization\Object\All" = "Sum of all objects"
+"\Spatial Organization\Object\All\Count" = "0"
+end_metadata

@@ -1,0 +1,23 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 1
+    HwyNumber Char (10) ;
+ReadOnly
+begin_metadata
+"\Shields" = ""
+"\Shields\ZoomMax" = "150"
+"\Shields\Type" = "1"
+"\Shields\ZoomMin" = "100"
+"\Shields\PhysicalName1" = "Us_shdx5.TAB"
+"\Shields\PhysicalName2" = " "
+"\Shields\LogicalName" = "UsShield_100_150"
+"\Shields\Color1" = "16711680"
+"\Shields\Color2" = "255"
+"\Shields\PointSize" = "22"
+"\Shields\Label" = "Font (""Century Gothic"",1,8,16777215)"
+"\IsReadOnly" = "FALSE"
+end_metadata

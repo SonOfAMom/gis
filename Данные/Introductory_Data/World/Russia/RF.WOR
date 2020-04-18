@@ -1,0 +1,42 @@
+!Workspace
+!Version 600
+!Charset WindowsCyrillic
+Open Table "City" As City Interactive
+Open Table "SubjectRF" As SubjectRF Interactive
+Open Table "Railway" As Railway Interactive
+Map From City,Railway,SubjectRF 
+  Position (0.520833,0.635417) Units "in"
+  Width 9.41667 Units "in" Height 5.32292 Units "in" 
+Set Window FrontWindow() ScrollBars On Autoscroll On
+Set Map
+  CoordSys Earth Projection 6, 1001, "km", 100, 54, 49, 68.5, 0, 0
+  Center (-373.3193327,1338.16301)
+  Zoom 8653.954681 Units "km"
+  Preserve Scale Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "km"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Right Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With R_name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 8000) Units "km"
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line Arrow Position Above Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial Cyr",0,9,0)
+    Label Line None Position Center Font ("Arial Cyr",0,9,0) Pen (1,2,0) 
+      With OBL_NAME
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (0, 10000) Units "km"
+Set Window FrontWindow() Printer
+ Name "EPSON Stylus Photo 900" Orientation Portrait Copies 1
+ Papersize 9

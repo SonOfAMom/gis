@@ -1,0 +1,15 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 1
+    id Integer ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "3644c622-741a-4dd6-8924-ba343a62d93b"
+"\MapCAD" = ""
+"\MapCAD\MeasurementLayer" = "TRUE"
+end_metadata

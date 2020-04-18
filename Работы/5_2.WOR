@@ -1,0 +1,38 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\Снов 1_50000 склейка.TAB" As Снов_1_50000_склейка Interactive
+Map From Снов_1_50000_склейка
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys NonEarth Units "m"
+  Center (4315.746298,6077.469052)
+  Zoom 7.836856436 Units "m"
+  Preserve Zoom Display Zoom
+  Distance Units "m" Area Units "sq m" XY Units "m"
+  Distance Type Cartesian
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.14, 57) Units "m" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set CoordSys NonEarth Units "m" Bounds (4304.6942635, 6056.68870793) (4332.119457, 6084.44236612)
+Set Map Layer 0 Editable
+Create Line (4315.349162,6077.013627) (4318.918614,6077.454704)
+    Pen (1,59,0) 
+Create Line (4315.998449,6077.999497) (4315.998725,6076.987729)
+    Pen (1,59,0) 
+Set CoordSys Earth
+Set Map Layer 0 Editable
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9

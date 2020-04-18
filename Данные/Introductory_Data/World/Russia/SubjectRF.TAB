@@ -1,0 +1,17 @@
+!table
+!version 450
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 10
+    OBL_NAME Char (46) Index 1 ;
+    REG_CNTR_NAME Char (40) ;
+    население Float ;
+    городское Float ;
+    сельское Float ;
+    FOKR Char (20) Index 2 ;
+    OKАTO Char (10) ;
+    obl_name_eng Char (46) ;
+    REG_CNTR_NAME_eng Char (40) ;
+    FOKR_eng Char (20) ;

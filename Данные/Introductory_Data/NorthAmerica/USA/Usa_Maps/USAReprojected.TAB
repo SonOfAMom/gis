@@ -1,0 +1,19 @@
+!table
+!version 300
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 4
+    State_Name Char (20) ;
+    State Char (2) ;
+    Fips_Code Char (2) ;
+    Pop_2000 Decimal (10, 0) ;
+ReadOnly
+begin_metadata
+"\ActiveObject" = ""
+"\ActiveObject\Expr" = "URL"
+"\ActiveObject\Mode" = "HOTLINK_MODE_BOTH"
+"\ActiveObject\Relative" = "TRUE"
+"\IsReadOnly" = "FALSE"
+end_metadata

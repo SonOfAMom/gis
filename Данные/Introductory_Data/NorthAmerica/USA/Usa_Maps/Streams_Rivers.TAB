@@ -1,0 +1,21 @@
+!table
+!version 450
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "Neutral"
+  Fields 4
+    Name Char (80) ;
+    State Char (5) ;
+    State_fips Char (5) ;
+    Length_Miles Decimal (16, 3) ;
+begin_metadata
+"\data1" = ""
+"\data1\vol5" = ""
+"\data1\vol5\MIPro_Goose_v80" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa" = ""
+"\data1\vol5\MIPro_Goose_v80\map_data\Namerca\usa\Usa_Maps" = "Revised Version of 1999 Data set updated Dec 2004"
+"\IsReadOnly" = "FALSE"
+end_metadata

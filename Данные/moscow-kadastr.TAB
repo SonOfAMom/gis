@@ -1,0 +1,22 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  File "moscow-kadastr.jpg"
+  Type "RASTER"
+  (37.488447,55.861738) (1378,1380) Label "Точка 1",
+  (37.752588,55.617885) (3482,4808) Label "Точка 3",
+  (37.689355,55.88054) (2977,1108) Label "Точка 4",
+  (37.663764,55.760499) (2755,2803) Label "Точка 5",
+  (37.618453,55.75168) (2400,2921) Label "Точка 6",
+  (37.561402,55.753722) (1954,2898) Label "Точка 7",
+  (37.601163,55.729217) (2265,3241) Label "Точка 8",
+  (37.662657,55.725019) (2760,3290) Label "Точка 9"
+  CoordSys Earth Projection 1, 104
+  Units "degree"
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "98bc7fb5-1b7d-46d7-9eba-cbece79a56c2"
+end_metadata

@@ -1,0 +1,102 @@
+!Workspace
+!Version 600
+!Charset WindowsLatin1
+Open Table "Eucty_6k" As Major_Cities Interactive
+Open Table "Eucty11k" As Cities Interactive
+Open Table "Eur_caps" As Capitals Interactive
+Open Table "Eurhiway" As Highways Interactive
+Open Table "Europe" As Europe Interactive
+Open Table "AUST_SWZ\Switzerland" As Switzlnd Interactive
+Open Table "SCAND\Norway" As Norway Interactive
+Open Table "Eurwater" As Water Interactive
+Open Table "..\Ocean"as Ocean Interactive
+Map From Capitals,Major_Cities,Cities,Water,Highways,Norway,
+  Switzlnd,Europe,Ocean 
+  Position (0.0208333,0.0625) Units "in"
+  Width 5.8125 Units "in" Height 3.20833 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (26.84077052,52.60408655)
+  Zoom 4000 Units "mi"
+  Preserve Zoom Display Zoom
+  Distance Units "mi" Area Units "sq mi" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (250, 2500) Units "mi" 
+    Label Line Arrow Position Right Font ("Arial",1,7,0) Pen (1,2,0) 
+      With Place_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 5
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (75, 250) Units "mi" 
+    Label Line Arrow Position Right Font ("Arial",0,6,0) Pen (1,2,0) 
+      With Place_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 5
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 100) Units "mi" 
+    Label Line Arrow Position Right Font ("Arial",0,6,0) Pen (1,2,0) 
+      With Place_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 5
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 1750) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With CAT
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 350) Units "mi" 
+    Label Line Arrow Position Above Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Highway
+      Parallel On Auto Off Overlap Off Duplicates Off Offset 2
+      Visibility On
+  Layer 6
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line None Position Center Font ("Arial",1,8,8421504) Pen (1,2,0) 
+      With Country_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 7
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Zoom (0, 800) Units "mi" 
+    Label Line None Position Center Font ("Arial",1,8,8421504) Pen (1,2,0) 
+      With Country_Name
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 8
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",1,8,8388608) Pen (1,2,0) 
+      With Country
+      Parallel On Auto On Overlap Off Duplicates On Offset 2
+      Visibility Zoom (750, 5750) Units "mi"
+  Layer 9
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Arial",0,9,0)
+    Label Line None Position Center Font ("Arial",0,9,0) Pen (1,2,0) 
+      With Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Window FrontWindow() Title "Europe"
+Set Window FrontWindow() Printer
+ Name "\\trodc1\1nw-hplj4050-1" Orientation Portrait Copies 1
+ Papersize 1
+Dim WorkspaceMaximizedWindow As Integer
+WorkspaceMaximizedWindow = Frontwindow()
+Set Window WorkspaceMaximizedWindow Max
+Undim WorkspaceMaximizedWindow

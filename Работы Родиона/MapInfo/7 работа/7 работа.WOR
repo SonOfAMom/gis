@@ -1,0 +1,106 @@
+!Workspace
+!Version 1103
+!Charset WindowsCyrillic
+Open Table "C:\Users\rodin\Desktop\Данные\Снов 1_50000 склейка.TAB" As Снов_1_50000_склейка Interactive
+Open Table "5 work" As _5_work Interactive
+Open Table "fifth work" As fifth_work Interactive
+Open Table "MapCAD_Расстановка_Размеров" As MapCAD_Расстановка_Размеров Interactive
+Open Table "7 work" As _7_work Interactive
+Open Table "MapCAD_Расстановка_Размеров(1)" As MapCAD_Расстановка_Размеров_1_ Interactive
+Map From MapCAD_Расстановка_Размеров_1_,_7_work,MapCAD_Расстановка_Размеров,fifth_work,Снов_1_50000_склейка
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Snap Mode On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 1001
+  Center (18.33158479,54.68478123)
+  Zoom 11.62348987 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map Layer 0 Selectable
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Format$(SphericalObjectLen(Object, "km"), "#.00")+" km"
+      Parallel On Auto On Overlap On Duplicates On Offset 2
+      Visibility On
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Направление
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 3
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Above Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Format$(SphericalObjectLen(Object, "km"), "#.00")+" km"
+      Parallel On Auto On Overlap On Duplicates On Offset 2
+      Visibility On
+  Layer 4
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line Arrow Position Right Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With Широта
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+  Layer 5
+    Display Graphic
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+    Zoom (0.14, 56) Units "km" Off 
+  contrast 50 
+  brightness 50 
+  alpha 255 
+    transparency off 
+  color 0 
+    grayscale off 
+Set CoordSys Earth Projection 1, 1001
+Set Map Layer 0 Editable
+Create Line (18.109702,54.741598) (17.973875,54.74125)
+    Pen (1,2,16711680) 
+Create Line (18.149877,54.73989) (17.978315,54.739417)
+    Pen (1,2,65280) 
+Create Line (18.109702,54.741598) (18.110149,54.656857)
+    Pen (1,2,16711680) 
+Create Line (18.149877,54.73989) (18.150098,54.659225)
+    Pen (1,2,65280) 
+Create Line (18.09658,54.737166) (18.112335,54.73758)
+    Pen (1,2,128) 
+Create Line (18.111391,54.746622) (18.112049,54.73757)
+    Pen (1,2,128) 
+Create Line (18.111391,54.746622) (18.095936,54.746207)
+    Pen (1,2,128) 
+Create Line (18.095936,54.746207) (18.09658,54.737166)
+    Pen (1,2,128) 
+Create Line (18.109702,54.741598) (18.110023,54.737519)
+    Pen (1,2,5242960) 
+Create Line (18.109702,54.741598) (18.111753,54.741648)
+    Pen (1,2,5242960) 
+Create Line (18.109702,54.741598) (18.109302,54.746566)
+    Pen (1,2,5242960) 
+Create Line (18.109702,54.741598) (18.096287,54.74128)
+    Pen (1,2,5242960) 
+Set CoordSys Earth
+Set Map Layer 1 Editable
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From fifth_work
+  Position (0.479167,2.15625) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+set browse order by 5
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From _7_work
+  Position (0.0416667,1.59375) Units "in"
+  Width 7.10417 Units "in" Height 2.90625 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "OneNote" Orientation Portrait Copies 1
+ Papersize 9

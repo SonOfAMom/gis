@@ -1,0 +1,10 @@
+!table
+!version 100
+FIELDS: 7
+    R_name Char (50) Index 1
+    NAME Char (50)
+    ADMIN Char (60)
+    ETYPE Char (9)
+    Status_pp Char (6)
+    popul_2004 Decimal (8, 2)
+    индекс Char (6)
