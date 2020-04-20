@@ -5,14 +5,14 @@
 Definition Table
   File "Снов 1_50000 склейка.jpg"
   Type "RASTER"
-  (4323,6082) (3064,314) Label "Точка 1",
-  (4322,6064) (3009,3494) Label "Точка 2",
-  (4307,6065) (358,3420) Label "Точка 3",
-  (4308,6082) (414,415) Label "Точка 4"
+  (6082000,4323000) (3065,315) Label "Точка 1",
+  (6064000,4322000) (3009,3495) Label "Точка 2",
+  (6065000,4307000) (358,3420) Label "Точка 3",
+  (6082000,4308000) (415,415) Label "Точка 4"
   CoordSys NonEarth Units "m"
   Units "m"
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "a9b6c286-5cd6-4aba-bea9-6ab596edaf57"
+"\MapInfo\TableID" = "f5603d3b-8c4b-4f68-acc0-a1b3ff4be4cd"
 end_metadata

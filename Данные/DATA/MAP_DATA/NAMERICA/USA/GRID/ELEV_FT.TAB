@@ -3,7 +3,7 @@
 !charset WindowsCyrillic
 
 Definition Table
-  File "elev_ft.mig"
+  File "ELEV_FT.MIG"
   Type "RASTER"
   (-125.492164,49.742601) (0,0) Label "Точка 1",
   (-66.688836,49.742601) (403,0) Label "Точка 2",
@@ -12,3 +12,8 @@ Definition Table
   CoordSys Earth Projection 1, 104
   Units "degree"
   RasterStyle 6 1
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "2c194c7b-8ac3-42b9-8f03-ad177248e9ea"
+end_metadata

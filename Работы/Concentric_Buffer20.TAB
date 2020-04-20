@@ -1,0 +1,17 @@
+!table
+!version 300
+!charset WindowsCyrillic
+
+Definition Table
+  Type NATIVE Charset "WindowsCyrillic"
+  Fields 5
+    Ring_ Smallint ;
+    Radius_ Float ;
+    Dist_Units Char (14) ;
+    Area_ Float ;
+    Area_Units Char (18) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "d941d31e-10f4-45b7-a179-806904523c16"
+end_metadata

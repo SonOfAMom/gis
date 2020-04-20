@@ -1,0 +1,183 @@
+!Workspace
+!Version 1500
+!Charset WindowsCyrillic
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\Introductory_Data\World\Russia\SubjectRF" As SubjectRF Interactive
+Map From SubjectRF
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 6, 1001, "km", 100, 54, 49, 68.5, 0, 0
+  Center (-245.6081243,1760.404276)
+  Zoom 9711.08807 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "km"
+shade 1 with население/Area(Object, "sq km") ranges apply all use all Brush (2,16728128,16777215) 
+  0: 0.01 Brush (2,32960,16777215) Pen (1,2,0) ,
+  0.01: 0.02 Brush (2,11599832,16777215) Pen (1,2,0) ,
+  0.02: 0.03 Brush (2,16777168,16777215) Pen (1,2,0) ,
+  0.03: 0.04 Brush (2,16760960,16777215) Pen (1,2,0) ,
+  0.04: 9.67 Brush (2,16728128,16777215) Pen (1,2,0) 
+  default Brush (2,16777215,16777215) Pen (1,2,0) 
+  # use 1 round 0.01 inflect off Brush (2,16744640,16777215) at 3 by 0 color 1 # 
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With OBL_NAME
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle "Плотность населения в области" Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Create Designer Legend
+  Position (13,0.208333) Units "in"
+  Width 2.76667 Units "in" Height 5 Units "in" 
+  Portrait
+  Default Frame Style "#" Font ("Tahoma",0,8,0)
+  Default Frame Line Width 36 Units "pt"
+  Default Frame Region Width 32 Units "pt"
+  Default Frame Region Height 14 Units "pt"
+  Frame From Layer 1
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Browse * From SubjectRF
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Layout Designer
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+  Dim uniqueLayoutWin As Integer
+  uniqueLayoutWin = FrontWindow()
+  Dim restoreCoordSysString As String
+  restoreCoordSysString = "Set " + SessionInfo(1)
+  Set CoordSys Layout Units "in"
+  Set Layout Window uniqueLayoutWin Zoom 50 Center (9.81628,6.00625)
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Resolution 600
+ Papersize 9
+Map From SubjectRF
+  Position (0.0291633,0.827748) Units "in"
+  Width 7.99167 Units "in" Height 4.09891 Units "in" 
+  Pen (1,2,0)  Priority 1 Into Window uniqueLayoutWin
+Set Window WindowID(0) Front
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map Redraw Off
+Set Map
+  CoordSys Earth Projection 6, 1001, "km", 100, 54, 49, 68.5, 0, 0
+  Center (-245.6081243,1760.404276)
+  Zoom 9711.08807 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "km"
+shade 1 with население/Area(Object, "sq km") ranges apply all use all Brush (2,16728128,16777215) 
+  0: 0.01 Brush (2,32960,16777215) Pen (1,2,0) ,
+  0.01: 0.02 Brush (2,11599832,16777215) Pen (1,2,0) ,
+  0.02: 0.03 Brush (2,16777168,16777215) Pen (1,2,0) ,
+  0.03: 0.04 Brush (2,16760960,16777215) Pen (1,2,0) ,
+  0.04: 9.67 Brush (2,16728128,16777215) Pen (1,2,0) 
+  default Brush (2,16777215,16777215) Pen (1,2,0) 
+  # use 1 round 0.01 inflect off Brush (2,16744640,16777215) at 3 by 0 color 1 # 
+Set Map
+  Layer 1
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Selectable Off
+  Layer 2
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With OBL_NAME
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+Set Map Redraw On
+set legend 
+  layer 1 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count on 
+    title auto Font ("Arial",0,9,0)
+    subtitle "Плотность населения в области" Font ("Arial",0,8,0)
+    ascending off 
+    ranges Font ("Arial",0,8,0)
+      auto display off ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Create Designer Legend
+  Position (0,0) Units "in"
+  Width 0 Units "in" Height 0 Units "in" 
+  Custom
+  Default Frame Style "#" Font ("Tahoma",0,8,0)
+  Default Frame Line Width 36 Units "pt"
+  Default Frame Region Width 32 Units "pt"
+  Default Frame Region Height 14 Units "pt"
+  Default Frame Auto Font Size ON 
+  Frame From Layer 1
+    Position (5.41997,6.08363) Units "in"
+    Priority 2
+  Set CoordSys Layout Units "in"
+Set Window uniqueLayoutWin Front
+Browse * From SubjectRF
+  Position (0.158332,8.22917) Units "in"
+  Width 7.73333 Units "in" Height 2.86478 Units "in" 
+  Pen (1,2,0)  Name "Нет содержания"
+Priority 3 Into Window uniqueLayoutWin
+Set Window WindowID(0) Front
+set window FrontWindow() Font ("Segoe UI",0,9,0)
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Set Window uniqueLayoutWin Front
+Create Text Into Window uniqueLayoutWin 
+    "Плотность населения РФ"
+    (2.3764,0.2347) (5.6736,0.5861)
+    Font ("Times New Roman",4,22,0)
+    Priority 4
+Create Text Into Window uniqueLayoutWin 
+    "Легенда"
+    (6.1833,5.5333) (7.2562,5.8847)
+    Font ("Times New Roman",0,22,0)
+    Priority 5
+Create Text Into Window uniqueLayoutWin 
+    "Таблица субъектов федерации"
+    (2.0535,7.65) (5.9965,8.0014)
+    Font ("Times New Roman",0,22,0)
+    Priority 6
+  Run Command restoreCoordSysString
+  Undim restoreCoordSysString
+  UnDim uniqueLayoutWin

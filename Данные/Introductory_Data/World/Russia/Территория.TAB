@@ -7,10 +7,10 @@ Definition Table
   Fields 10
     OBL_NAME Char (46) Index 1 ;
     REG_CNTR_NAME Char (40) ;
-    население Float Index 3 ;
+    население Float ;
     городское Float ;
     сельское Float ;
-    FOKR Char (20) Index 2 ;
+    территории Char (20) Index 2 ;
     OKАTO Char (10) ;
     obl_name_eng Char (46) ;
     REG_CNTR_NAME_eng Char (40) ;
@@ -18,5 +18,5 @@ Definition Table
 begin_metadata
 "\IsReadOnly" = "FALSE"
 "\MapInfo" = ""
-"\MapInfo\TableID" = "e945782b-ce12-4e58-9a8f-5448bb445786"
+"\MapInfo\TableID" = "17b12720-ed1b-4013-9fcf-33990a07e538"
 end_metadata

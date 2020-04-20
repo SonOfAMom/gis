@@ -1,0 +1,95 @@
+!Workspace
+!Version  950
+!Charset WindowsCyrillic
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\DATA\MAP_DATA\NAMERICA\USA\GRID\ELEV_FT.TAB" As ELEV_FT Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\Introductory_Data\NorthAmerica\USA\Grid\ELEV_FT.TAB" As ELEV_FT_2 Interactive
+Open Table "C:\Users\kett\Desktop\Алексей Николаевич\ГИС\Данные\Introductory_Data\NorthAmerica\USA\Usa_Maps\USA" As USA Interactive
+Map From USA,ELEV_FT_2
+  Position (0.025,1.58333) Units "in"
+  Width 7.99167 Units "in" Height 3.4 Units "in" 
+Set Window FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias Image High
+Set Map
+  CoordSys Earth Projection 1, 104
+  Center (-93.65403371,39.29950125)
+  Zoom 6241.186705 Units "km"
+  Preserve Zoom Display Zoom
+  Distance Units "km" Area Units "sq km" XY Units "degree"
+Set Map
+  Layer 1
+    Display Graphic
+    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line (1,2,0) Font ("Tahoma",0,9,0)
+    Label Line None Position Center Font ("Tahoma",0,9,0) Pen (1,2,0) 
+      With State_Name
+      Parallel On Auto Off Overlap Off Duplicates On Offset 2
+      Visibility On
+    Activate Using URL On Labels Objects Relative Path On
+  Layer 2
+    Display Value
+    Global Pen (1,2,0)  Brush (2,16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font ("Tahoma",0,9,0)
+    Zoom (320, 130000) Units "km" Off 
+    inflect 5 at 
+      RGB(0, 168, 0) : 1500 
+      RGB(166, 255, 166) : 3500 
+      RGB(255, 190, 125) : 7500 
+      RGB(185, 92, 0) : 10000 
+      RGB(77, 38, 0) : 14500 
+      round 0 # use 3 # 
+    contrast 50 
+    brightness 50 
+    grayscale off 
+
+    relief off 
+set legend 
+  layer 2 
+    display on 
+    shades on 
+    symbols off 
+    lines off 
+    count off 
+    title auto Font ("Tahoma",0,9,0)
+    subtitle auto Font ("Tahoma",0,8,0)
+    ascending off 
+    ranges Font ("Tahoma",0,8,0)
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on ,
+      auto display on  
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
+Dim uniqueStringName As String
+uniqueStringName = uniqueStringName & "Map From USA,ELEV_FT_2  Width 12.9 Units ""in"" Height 6.5 Units ""in""  Set Win"
+uniqueStringName = uniqueStringName & "dow FrontWindow() ScrollBars Off Autoscroll On Enhanced On Smooth Text Antialias"
+uniqueStringName = uniqueStringName & " Image High Set Map  CoordSys Earth Projection 1, 104  Center (-93.65403371,39.2"
+uniqueStringName = uniqueStringName & "9950125)  Zoom 6241.186705 Units ""km""  Preserve Zoom Display Zoom  Distance Un"
+uniqueStringName = uniqueStringName & "its ""km"" Area Units ""sq km"" XY Units ""degree"" Set Map  Layer 1    Display "
+uniqueStringName = uniqueStringName & "Graphic    Global Pen (1,2,0) Brush (2,16777215,16777215) Symbol (35,0,12) Line "
+uniqueStringName = uniqueStringName & "(1,2,0) Font (""Tahoma"",0,9,0)    Label Line None Position Center Font (""Tahom"
+uniqueStringName = uniqueStringName & "a"",0,9,0) Pen (1,2,0)       With State_Name      Parallel On Auto Off Overlap O"
+uniqueStringName = uniqueStringName & "ff Duplicates On Offset 2      Visibility On    Activate Using URL On Labels Obj"
+uniqueStringName = uniqueStringName & "ects Relative Path On  Layer 2    Display Value    Global Pen (1,2,0)  Brush (2,"
+uniqueStringName = uniqueStringName & "16777215,16777215)  Symbol (35,0,12)  Line (1,2,0)  Font (""Tahoma"",0,9,0)    Z"
+uniqueStringName = uniqueStringName & "oom (320, 130000) Units ""km"" Off     inflect 5 at       RGB(0, 168, 0) : 1500 "
+uniqueStringName = uniqueStringName & "      RGB(166, 255, 166) : 3500       RGB(255, 190, 125) : 7500       RGB(185, 9"
+uniqueStringName = uniqueStringName & "2, 0) : 10000       RGB(77, 38, 0) : 14500       round 0 # use 3 #     contrast "
+uniqueStringName = uniqueStringName & "50     brightness 50     grayscale off     relief off  set legend   layer 2     "
+uniqueStringName = uniqueStringName & "display on     shades on     symbols off     lines off     count off     title a"
+uniqueStringName = uniqueStringName & "uto Font (""Tahoma"",0,9,0)    subtitle auto Font (""Tahoma"",0,8,0)    ascendin"
+uniqueStringName = uniqueStringName & "g off     ranges Font (""Tahoma"",0,8,0)      auto display on ,      auto displa"
+uniqueStringName = uniqueStringName & "y on ,      auto display on ,      auto display on ,      auto display on   Set "
+uniqueStringName = uniqueStringName & "Window FrontWindow() Printer Name ""MapInfo PDF Printer Version 10.0"" Orientati"
+uniqueStringName = uniqueStringName & "on Portrait Copies 1 Papersize 9 "
+Create PrismMap MapString uniqueStringName 1 With Med_Inc_2000 
+	Camera Position(74.820477,-28.670740,160.724538) FocalPoint(-99.858173,81.881116,8.749672) 
+		Orientation(-0.707107,0.707107,0.000000,0.680809,-0.430875,0.592322,153.113185,402.016802)
+	Light Position(0.000000,0.000000,1.000000) Color RGB(255,255,255) 
+	Scale 9.51421e-05 
+	Background RGB(255,255,255)
+Set Window FrontWindow() Position(0.233333,1.858333) Units "in" Width 7.991667  Units "in" Height 3.408333 Units "in" 
+Set PrismMap Label 
+      With Med_Inc_2000
+UnDim uniqueStringName
+Set Window FrontWindow() Printer
+ Name "MapInfo PDF Printer Version 10.0" Orientation Portrait Copies 1
+ Papersize 9
